@@ -1,0 +1,1026 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk — Rumah Ulos</title>
+    <meta
+      name="description"
+      content="Koleksi lengkap Rumah Ulos: Produk Unggulan, Luxury, Inovasi Gen Z, Hande-hande Pria, dan lebih banyak lagi."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "ru-red": "#8B0000",
+              "ru-red-dark": "#6B0000",
+              "ru-gold": "#ca8a04",
+              "ru-black": "#0a0a0a",
+              "ru-white": "#fdfbf7",
+              "ru-cream": "#f9f6f0",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              serif: ["Playfair Display", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="antialiased">
+    <!-- NAVBAR -->
+    <nav
+      id="navbar"
+      class="fixed w-full z-50 py-3 text-white bg-ru-black/90 backdrop-blur-md border-b border-white/5"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center"
+      >
+        <a href="index.html" class="flex items-center">
+          <img
+            src="assets/logo.png"
+            alt="Rumah Ulos"
+            class="h-10 w-auto object-contain logo-gold"
+          />
+        </a>
+        <div
+          class="hidden md:flex items-center space-x-7 text-sm font-medium tracking-wide"
+        >
+          <a
+            href="index.html"
+            data-nav
+            class="hover:text-ru-gold transition-colors"
+            >Beranda</a
+          >
+          <a href="products.html" data-nav class="text-ru-gold font-semibold"
+            >Produk</a
+          >
+          <a
+            href="gallery.html"
+            data-nav
+            class="hover:text-ru-gold transition-colors"
+            >Galeri</a
+          >
+          <a
+            href="business.html"
+            data-nav
+            class="hover:text-ru-gold transition-colors"
+            >Bisnis</a
+          >
+          <a
+            href="team.html"
+            data-nav
+            class="hover:text-ru-gold transition-colors"
+            >Tim</a
+          >
+        </div>
+        <a
+          href="https://wa.me/6281234567890"
+          target="_blank"
+          class="hidden md:inline-flex items-center gap-2 bg-ru-red hover:bg-ru-red-dark text-white px-5 py-2.5 rounded-full text-sm font-semibold btn-primary transition-all"
+        >
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+            />
+          </svg>
+          Hubungi Kami
+        </a>
+        <button
+          id="mobile-menu-btn"
+          class="md:hidden text-white p-1"
+          aria-label="Menu"
+        >
+          <svg
+            class="icon-open w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+          <svg
+            class="icon-close hidden w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        id="mobile-menu"
+        class="md:hidden absolute top-full left-0 w-full bg-ru-black border-b border-white/10"
+      >
+        <div class="flex flex-col space-y-1 px-6 py-4 text-sm font-medium">
+          <a href="index.html" class="py-2 hover:text-ru-gold transition-colors"
+            >Beranda</a
+          >
+          <a href="products.html" class="py-2 text-ru-gold font-semibold"
+            >Produk</a
+          >
+          <a
+            href="gallery.html"
+            class="py-2 hover:text-ru-gold transition-colors"
+            >Galeri</a
+          >
+          <a
+            href="business.html"
+            class="py-2 hover:text-ru-gold transition-colors"
+            >Bisnis</a
+          >
+          <a href="team.html" class="py-2 hover:text-ru-gold transition-colors"
+            >Tim</a
+          >
+          <a
+            href="https://wa.me/6281234567890"
+            target="_blank"
+            class="mt-2 text-center bg-ru-red text-white py-2.5 rounded-full font-semibold"
+            >Hubungi Kami</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div
+      class="pt-28 pb-16 bg-ru-white text-ru-black relative overflow-hidden border-b border-gray-100"
+    >
+      <div
+        class="absolute inset-0 opacity-[0.03] mix-blend-multiply"
+        style="
+          background-image: url(&quot;assets/ulos_motif_1773415959494.png&quot;);
+          background-size: 200px;
+        "
+      ></div>
+      <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+        <span
+          class="section-badge text-ru-red border-ru-red/30 bg-ru-red/5 reveal"
+          >Katalog Lengkap</span
+        >
+        <h1
+          class="reveal delay-100 section-title text-4xl md:text-6xl text-gray-900 mt-2 mb-4"
+        >
+          Koleksi <span class="italic text-ru-red">Rumah Ulos</span>
+        </h1>
+        <div
+          class="ulos-divider !bg-ru-red/30 reveal delay-200 mb-5 relative before:bg-ru-red after:bg-ru-red"
+        ></div>
+        <p class="reveal delay-300 text-gray-500 font-light max-w-xl mx-auto">
+          Menenun Budaya,menenun alam,menciptakan ekonomi kreatif.
+        </p>
+      </div>
+    </div>
+
+    <!-- ============= SECTION A: PRODUK UNGGULAN ============= -->
+    <section class="py-24 bg-ru-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row md:items-end justify-between mb-12"
+        >
+          <div>
+            <span class="section-badge reveal">4A</span>
+            <h2
+              class="reveal delay-100 section-title text-3xl md:text-4xl text-ru-black mt-1 mb-2"
+            >
+              Produk Unggulan
+            </h2>
+            <div class="ulos-divider-left reveal delay-200"></div>
+          </div>
+          <p
+            class="reveal delay-100 text-gray-500 text-sm font-light mt-4 md:mt-0 max-w-sm"
+          >
+            Koleksi terbaik yang paling diminati — pilihan utama untuk upacara
+            adat maupun hadiah istimewa.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- P1 -->
+          <div
+            class="product-card bg-white border border-gray-100 shadow-sm reveal"
+          >
+            <div
+              class="img-wrap h-60 gallery-item"
+              data-lightbox="assets/1.jpeg"
+              data-caption="Ulos Ragidup Klasik — Premium"
+            >
+              <img
+                src="assets/1.jpeg"
+                alt="Ulos Ragidup Klasik"
+                class="w-full h-full object-contain bg-gray-50"
+              />
+            </div>
+            <div class="p-5">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="font-serif text-lg font-bold">Lorem, ipsum.</h3>
+                <span
+                  class="text-xs bg-ru-red/10 text-ru-red px-2 py-0.5 rounded font-semibold"
+                  >PREMIUM</span
+                >
+              </div>
+              <p class="text-gray-500 text-sm font-light mb-4 leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                ducimus autem cum.
+              </p>
+              <p class="font-bold text-ru-red text-lg mb-4">Rp 1.500.000</p>
+              <a
+                href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan Ulos Ragidup"
+                target="_blank"
+                class="block w-full text-center border border-ru-red text-ru-red hover:bg-ru-red hover:text-white transition py-2 text-sm font-semibold rounded-sm"
+                >Tanya WhatsApp</a
+              >
+            </div>
+          </div>
+          <!-- P2 -->
+          <div
+            class="product-card bg-white border border-gray-100 shadow-sm reveal delay-100"
+          >
+            <div
+              class="img-wrap h-60 gallery-item"
+              data-lightbox="assets/2.jpeg"
+              data-caption="Ulos Sibolang Indigo — Terlaris"
+            >
+              <img
+                src="assets/2.jpeg"
+                alt="Ulos Sibolang"
+                class="w-full h-full object-contain bg-gray-50"
+              />
+            </div>
+            <div class="p-5">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="font-serif text-lg font-bold">Lorem, ipsum.</h3>
+                <span
+                  class="text-xs bg-ru-gold/10 text-ru-gold px-2 py-0.5 rounded font-semibold"
+                  >TERLARIS</span
+                >
+              </div>
+              <p class="text-gray-500 text-sm font-light mb-4 leading-relaxed">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+                possimus delectus doloremque..
+              </p>
+              <p class="font-bold text-ru-red text-lg mb-4">Rp 850.000</p>
+              <a
+                href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan Ulos Sibolang"
+                target="_blank"
+                class="block w-full text-center border border-ru-red text-ru-red hover:bg-ru-red hover:text-white transition py-2 text-sm font-semibold rounded-sm"
+                >Tanya WhatsApp</a
+              >
+            </div>
+          </div>
+          <!-- P3 -->
+          <div
+            class="product-card bg-white border border-gray-100 shadow-sm reveal delay-200"
+          >
+            <div
+              class="img-wrap h-60 gallery-item"
+              data-lightbox="assets/3.jpeg"
+              data-caption="Ulos Mangiring Suci — Warisan Keluarga"
+            >
+              <img
+                src="assets/3.jpeg"
+                alt="Ulos Mangiring"
+                class="w-full h-full object-contain bg-gray-50"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-serif text-lg font-bold mb-2">
+                Lorem, ipsum dolor.
+              </h3>
+              <p class="text-gray-500 text-sm font-light mb-4 leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam soluta ipsa adipisci.
+              </p>
+              <p class="font-bold text-ru-red text-lg mb-4">Rp 750.000</p>
+              <a
+                href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan Ulos Mangiring"
+                target="_blank"
+                class="block w-full text-center border border-ru-red text-ru-red hover:bg-ru-red hover:text-white transition py-2 text-sm font-semibold rounded-sm"
+                >Tanya WhatsApp</a
+              >
+            </div>
+          </div>
+          <!-- P4 -->
+          <div
+            class="product-card bg-white border border-gray-100 shadow-sm reveal delay-200"
+          >
+            <div
+              class="img-wrap h-60 gallery-item"
+              data-lightbox="assets/4.jpeg"
+              data-caption="Ulos Mangiring Suci — Warisan Keluarga"
+            >
+              <img
+                src="assets/4.jpeg"
+                alt="Ulos Mangiring"
+                class="w-full h-full object-contain bg-gray-50"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-serif text-lg font-bold mb-2">
+                Lorem, ipsum dolor.
+              </h3>
+              <p class="text-gray-500 text-sm font-light mb-4 leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam soluta ipsa adipisci.
+              </p>
+              <p class="font-bold text-ru-red text-lg mb-4">Rp 750.000</p>
+              <a
+                href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan Ulos Mangiring"
+                target="_blank"
+                class="block w-full text-center border border-ru-red text-ru-red hover:bg-ru-red hover:text-white transition py-2 text-sm font-semibold rounded-sm"
+                >Tanya WhatsApp</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= SECTION B: PRODUK LUXURY ============= -->
+    <section class="py-24 bg-ru-cream text-ru-black relative overflow-hidden">
+      <div
+        class="absolute inset-0 opacity-[0.03] mix-blend-multiply"
+        style="
+          background-image: url(&quot;assets/ulos_motif_1773415959494.png&quot;);
+          background-size: 200px;
+        "
+      ></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-14">
+          <span
+            class="section-badge text-ru-gold border-ru-gold/30 bg-ru-gold/10 reveal"
+            >4B</span
+          >
+          <h2
+            class="reveal delay-100 section-title text-3xl md:text-4xl text-gray-900 mt-1 mb-2"
+          >
+            Produk <span class="italic text-ru-gold">Luxury</span>
+          </h2>
+          <div class="w-16 h-px bg-ru-gold mx-auto reveal delay-200 mb-4"></div>
+          <p class="reveal delay-300 text-gray-600 font-light max-w-lg mx-auto">
+            Koleksi eksklusif berbenang emas untuk momen paling istimewa dalam
+            hidup Anda.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- L1 -->
+          <div
+            class="reveal group relative overflow-hidden rounded-sm border border-gray-200 shadow-lg gallery-item"
+            data-lightbox="assets/5.jpeg"
+            data-caption="Ragidup Gold Reserve — Edisi Eksklusif"
+          >
+            <div class="h-96 overflow-hidden bg-white">
+              <img
+                src="assets/5.jpeg"
+                alt="Luxury Ragidup Gold"
+                class="w-full h-full object-contain bg-gray-50 group-hover:scale-105 transition duration-700"
+              />
+            </div>
+            <div
+              class="absolute inset-x-0 bottom-0 bg-white/95 backdrop-blur-sm border-t border-gray-100 p-6 z-20"
+            >
+              <span
+                class="text-xs text-ru-gold tracking-widest uppercase font-semibold"
+                >Exclusive Edition</span
+              >
+              <h3 class="font-serif text-2xl font-bold mt-1 mb-2 text-gray-900">
+                Lorem, ipsum dolor.
+              </h3>
+              <p class="text-gray-500 text-sm font-light mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                quis.
+              </p>
+              <div class="flex justify-between items-center">
+                <p class="font-bold text-ru-gold text-xl">Rp 8.500.000</p>
+                <a
+                  href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan Ragidup Gold Reserve"
+                  target="_blank"
+                  class="text-sm bg-ru-gold text-white px-4 py-2 font-semibold hover:bg-yellow-600 transition rounded-sm shadow-md"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- L2 -->
+          <div
+            class="reveal delay-100 group relative overflow-hidden rounded-sm border border-gray-200 shadow-lg gallery-item"
+            data-lightbox="assets/13.jpeg"
+            data-caption="Grand Heritage Suri — Koleksi Warisan"
+          >
+            <div class="h-96 overflow-hidden bg-white">
+              <img
+                src="assets/13.jpeg"
+                alt="Luxury Suri Suri"
+                class="w-full h-full object-contain bg-gray-50 group-hover:scale-105 transition duration-700"
+              />
+            </div>
+            <div
+              class="absolute inset-x-0 bottom-0 bg-white/95 backdrop-blur-sm border-t border-gray-100 p-6 z-20"
+            >
+              <span
+                class="text-xs text-ru-gold tracking-widest uppercase font-semibold"
+                >Heritage Collection</span
+              >
+              <h3 class="font-serif text-2xl font-bold mt-1 mb-2 text-gray-900">
+                Lorem, ipsum dolor.
+              </h3>
+              <p class="text-gray-500 text-sm font-light mb-4">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+                nihil ad dolorem.
+              </p>
+              <div class="flex justify-between items-center">
+                <p class="font-bold text-ru-gold text-xl">Rp 6.200.000</p>
+                <a
+                  href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan Grand Heritage Suri"
+                  target="_blank"
+                  class="text-sm bg-ru-gold text-white px-4 py-2 font-semibold hover:bg-yellow-600 transition rounded-sm shadow-md"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- L3 -->
+          <div
+            class="reveal delay-100 group relative overflow-hidden rounded-sm border border-gray-200 shadow-lg gallery-item"
+            data-lightbox="assets/18.jpeg"
+            data-caption="Grand Heritage Suri — Koleksi Warisan II"
+          >
+            <div class="h-96 overflow-hidden bg-white">
+              <img
+                src="assets/18.jpeg"
+                alt="Luxury Suri Suri"
+                class="w-full h-full object-contain bg-gray-50 group-hover:scale-105 transition duration-700"
+              />
+            </div>
+            <div
+              class="absolute inset-x-0 bottom-0 bg-white/95 backdrop-blur-sm border-t border-gray-100 p-6 z-20"
+            >
+              <span
+                class="text-xs text-ru-gold tracking-widest uppercase font-semibold"
+                >Heritage Collection</span
+              >
+              <h3 class="font-serif text-2xl font-bold mt-1 mb-2 text-gray-900">
+                Lorem, ipsum dolor.
+              </h3>
+              <p class="text-gray-500 text-sm font-light mb-4">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
+                voluptatem inventore voluptas.
+              </p>
+              <div class="flex justify-between items-center">
+                <p class="font-bold text-ru-gold text-xl">Rp 6.200.000</p>
+                <a
+                  href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan Grand Heritage Suri"
+                  target="_blank"
+                  class="text-sm bg-ru-gold text-white px-4 py-2 font-semibold hover:bg-yellow-600 transition rounded-sm shadow-md"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= SECTION C: INOVASI GEN Z ============= -->
+    <section class="py-24 bg-gradient-to-br from-gray-50 to-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
+          <div class="reveal-left">
+            <span class="section-badge">4C</span>
+            <h2
+              class="section-title text-3xl md:text-4xl text-ru-black mt-1 mb-3"
+            >
+              Inovasi untuk <span class="italic text-ru-red">Gen Z</span>
+            </h2>
+            <div class="ulos-divider-left mb-5"></div>
+            <p class="text-gray-600 font-light leading-relaxed mb-6">
+              Ulos bukan hanya untuk upacara adat! Kami mengintegrasikan motif
+              ulos ke dalam fashion streetwear, aksesori, dan daily wear yang
+              kece. Cocok untuk di-upload ke Instagram dan TikTok.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 bg-ru-red/10 text-ru-red rounded-full text-xs font-semibold"
+                >#UlosForAll</span
+              >
+              <span
+                class="px-3 py-1 bg-ru-gold/10 text-ru-gold rounded-full text-xs font-semibold"
+                >#TradiModern</span
+              >
+              <span
+                class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs font-semibold"
+                >#LocalProud</span
+              >
+              <span
+                class="px-3 py-1 bg-ru-red/10 text-ru-red rounded-full text-xs font-semibold"
+                >#BatakVibes</span
+              >
+            </div>
+          </div>
+          <div
+            class="reveal-right h-[400px] overflow-hidden rounded-sm shadow-2xl group gallery-item"
+            data-lightbox="assets/product_genz.png"
+            data-caption="Inovasi Ulos Gen Z — Streetwear Style"
+          >
+            <img
+              src="assets/product_genz.png"
+              alt="Inovasi Ulos Gen Z"
+              class="w-full h-full object-contain bg-gray-50 group-hover:scale-105 transition duration-700"
+            />
+          </div>
+        </div>
+
+        <!-- Gen Z Product Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div class="product-card bg-white border border-gray-100 reveal">
+            <div
+              class="img-wrap h-52 gallery-item"
+              data-lightbox="assets/genz1.png"
+              data-caption="Ulos Scarf Urban — Fashion Gen Z"
+            >
+              <img
+                src="assets/genz1.png"
+                alt="Ulos Scarf"
+                class="w-full h-full object-contain bg-gray-50"
+                style="filter: hue-rotate(30deg) saturate(1.3)"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-base mb-1">Ulos Scarf Urban</h3>
+              <p class="text-gray-400 text-xs mb-3 font-light">
+                Selendang ulos tipis untuk daily look. Bisa dipakai 5 cara
+                berbeda.
+              </p>
+              <p class="font-bold text-ru-red mb-3">Rp 320.000</p>
+              <a
+                href="https://wa.me/6281234567890"
+                target="_blank"
+                class="block w-full text-center bg-ru-red text-white hover:bg-ru-red-dark transition py-2 text-xs font-semibold rounded-sm"
+                >Order WA</a
+              >
+            </div>
+          </div>
+          <div
+            class="product-card bg-white border border-gray-100 reveal delay-100"
+          >
+            <div
+              class="img-wrap h-52 gallery-item"
+              data-lightbox="assets/genz3.png"
+              data-caption="Ulos Tote Bag — Stylish & Tradisional"
+            >
+              <img
+                src="assets/genz3.png"
+                alt="Ulos Tote Bag"
+                class="w-full h-full object-contain bg-gray-50 saturate-150"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-base mb-1">Ulos Tote Bag</h3>
+              <p class="text-gray-400 text-xs mb-3 font-light">
+                Canvas bag dengan panel ulos di sisi luar. Kuat, stylish, dan
+                bercerita.
+              </p>
+              <p class="font-bold text-ru-red mb-3">Rp 280.000</p>
+              <a
+                href="https://wa.me/6281234567890"
+                target="_blank"
+                class="block w-full text-center bg-ru-red text-white hover:bg-ru-red-dark transition py-2 text-xs font-semibold rounded-sm"
+                >Order WA</a
+              >
+            </div>
+          </div>
+          <div
+            class="product-card bg-white border border-gray-100 reveal delay-200"
+          >
+            <div
+              class="img-wrap h-52 gallery-item"
+              data-lightbox="assets/genz6.png"
+              data-caption="Ulos Mini Wallet — Aksesori Unik"
+            >
+              <img
+                src="assets/genz6.png"
+                alt="Ulos Dompet"
+                class="w-full h-full object-contain bg-gray-50"
+                style="filter: hue-rotate(-20deg) brightness(1.1)"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-base mb-1">Ulos Mini Wallet</h3>
+              <p class="text-gray-400 text-xs mb-3 font-light">
+                Dompet kulit dengan motif ulos emboss. Elegan dan unik untuk
+                gift.
+              </p>
+              <p class="font-bold text-ru-red mb-3">Rp 195.000</p>
+              <a
+                href="https://wa.me/6281234567890"
+                target="_blank"
+                class="block w-full text-center bg-ru-red text-white hover:bg-ru-red-dark transition py-2 text-xs font-semibold rounded-sm"
+                >Order WA</a
+              >
+            </div>
+          </div>
+          <div
+            class="product-card bg-white border border-gray-100 reveal delay-300"
+          >
+            <div
+              class="img-wrap h-52 gallery-item"
+              data-lightbox="assets/genz5.png"
+              data-caption="Ulos Bucket Hat — OOTD Ready"
+            >
+              <img
+                src="assets/genz5.png"
+                alt="Ulos Bucket Hat"
+                class="w-full h-full object-contain bg-gray-50 brightness-90"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-base mb-1">Ulos Bucket Hat</h3>
+              <p class="text-gray-400 text-xs mb-3 font-light">
+                Topi dengan band bermotif ulos. OOTD ready, cocok untuk
+                festival.
+              </p>
+              <p class="font-bold text-ru-red mb-3">Rp 175.000</p>
+              <a
+                href="https://wa.me/6281234567890"
+                target="_blank"
+                class="block w-full text-center bg-ru-red text-white hover:bg-ru-red-dark transition py-2 text-xs font-semibold rounded-sm"
+                >Order WA</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= SECTION D: HANDE-HANDE PRIA ============= -->
+    <section
+      class="py-24 bg-ru-white text-ru-black relative overflow-hidden border-t border-gray-100"
+    >
+      <div
+        class="absolute inset-0 opacity-[0.03] mix-blend-multiply"
+        style="
+          background-image: url(&quot;assets/ulos_motif_1773415959494.png&quot;);
+          background-size: 200px;
+        "
+      ></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div
+            class="reveal-left order-2 lg:order-1 h-[450px] overflow-hidden rounded-sm shadow-2xl group border-[10px] border-white gallery-item"
+            data-lightbox="assets/hande2.png"
+            data-caption="Ulos Hande-hande Pria — Koleksi Premium"
+          >
+            <img
+              src="assets/hande2.png"
+              alt="Ulos Hande-hande Pria"
+              class="w-full h-full object-contain bg-gray-50 group-hover:scale-105 transition duration-700"
+            />
+          </div>
+          <div class="reveal-right order-1 lg:order-2">
+            <span class="section-badge text-ru-red bg-ru-red/5 border-ru-red/20"
+              >4D</span
+            >
+            <h2
+              class="section-title text-3xl md:text-4xl text-gray-900 mt-1 mb-3"
+            >
+              Ulos
+              <span class="italic text-ru-gold">Ulos Hande-hande</span> Pria
+            </h2>
+            <div
+              class="ulos-divider-left !bg-ru-gold/40 mb-5 relative before:bg-ru-gold after:bg-ru-gold"
+            ></div>
+            <p class="text-gray-600 font-light leading-relaxed mb-6">
+              Ulos hande-hande adalah selendang khas Batak yang umum digunakan
+              dalam acara adat (sukacita/dukacita), menari (marmargondang), atau
+              sebagai aksesori busana. Biasanya disampirkan di bahu, ulos ini
+              melambangkan kehangatan, kasih sayang, dan berkat bagi pemakainya.
+              Sering dipakai oleh wanita dan anak-anak.
+            </p>
+            <div class="grid grid-cols-2 gap-4 mb-8">
+              <div class="p-4 border border-gray-200 rounded-sm bg-gray-50/50">
+                <h4 class="font-semibold text-sm mb-1 text-gray-900">
+                  Hande-hande Standar
+                </h4>
+                <p class="text-gray-500 text-xs font-light mb-2">
+                  Untuk pesta adat & pernikahan. Bahan pilihan.
+                </p>
+                <p class="text-ru-red font-bold">Rp 450.000</p>
+              </div>
+              <div class="p-4 border border-ru-gold/40 rounded-sm bg-ru-gold/5">
+                <h4 class="font-semibold text-sm mb-1 text-ru-gold">
+                  Hande-hande Premium
+                </h4>
+                <p class="text-gray-500 text-xs font-light mb-2">
+                  Benang emas, untuk upacara besar & pemberian penghormatan.
+                </p>
+                <p class="text-ru-gold font-bold">Rp 950.000</p>
+              </div>
+              <div class="p-4 border border-gray-200 rounded-sm bg-gray-50/50">
+                <h4 class="font-semibold text-sm mb-1 text-gray-900">
+                  Selempang Ulos Pria
+                </h4>
+                <p class="text-gray-500 text-xs font-light mb-2">
+                  Sash bahu untuk tampilan adat yang gagah.
+                </p>
+                <p class="text-ru-red font-bold">Rp 680.000</p>
+              </div>
+              <div class="p-4 border border-gray-200 rounded-sm bg-gray-50/50">
+                <h4 class="font-semibold text-sm mb-1 text-gray-900">
+                  Set Lengkap Pria
+                </h4>
+                <p class="text-gray-500 text-xs font-light mb-2">
+                  Hande-hande + selempang + ulos tubuh. Paket hemat.
+                </p>
+                <p class="text-ru-red font-bold">Rp 1.800.000</p>
+              </div>
+            </div>
+            <a
+              href="https://wa.me/6281234567890?text=Halo, saya ingin tanya tentang koleksi Hande-hande Pria"
+              target="_blank"
+              class="inline-flex items-center gap-2 bg-ru-red text-white px-7 py-3.5 rounded-full font-bold hover:bg-ru-red-dark transition-all shadow-[0_5px_15px_rgba(139,0,0,0.2)]"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+                />
+              </svg>
+              Konsultasi via WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= SECTION E: PRODUK LAINNYA ============= -->
+    <section class="py-24 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <span class="section-badge reveal">4E</span>
+          <h2
+            class="reveal delay-100 section-title text-3xl md:text-4xl text-ru-black mt-1 mb-2"
+          >
+            Produk Lainnya
+          </h2>
+          <div class="ulos-divider reveal delay-200 mb-4 mx-auto"></div>
+          <p
+            class="reveal delay-300 text-gray-500 text-sm font-light max-w-lg mx-auto"
+          >
+            Temukan ragam pilihan kain ulos untuk berbagai keperluan dan
+            kesempatan.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+          <div class="product-card bg-white border border-gray-100 reveal">
+            <div
+              class="img-wrap h-44 gallery-item"
+              data-lightbox="assets/9.jpeg"
+              data-caption="Ulos Sadum"
+            >
+              <img
+                src="assets/9.jpeg"
+                alt="Ulos Sadum"
+                class="w-full h-full object-contain bg-gray-50"
+                style="filter: hue-rotate(15deg)"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-sm mb-1">Ulos Sadum</h3>
+              <p class="font-bold text-ru-red text-sm">Rp 900.000</p>
+            </div>
+          </div>
+          <div
+            class="product-card bg-white border border-gray-100 reveal delay-100"
+          >
+            <div
+              class="img-wrap h-44 gallery-item"
+              data-lightbox="assets/10.jpeg"
+              data-caption="Ulos Bintang Maratur"
+            >
+              <img
+                src="assets/10.jpeg"
+                alt="Ulos Bintang Maratur"
+                class="w-full h-full object-contain bg-gray-50 saturate-150"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-sm mb-1">Ulos Bintang Maratur</h3>
+              <p class="font-bold text-ru-red text-sm">Rp 1.100.000</p>
+            </div>
+          </div>
+          <div
+            class="product-card bg-white border border-gray-100 reveal delay-200"
+          >
+            <div
+              class="img-wrap h-44 gallery-item"
+              data-lightbox="assets/11.jpeg"
+              data-caption="Ulos Suri-suri"
+            >
+              <img
+                src="assets/11.jpeg"
+                alt="Ulos Suri-suri"
+                class="w-full h-full object-contain bg-gray-50 brightness-90"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-sm mb-1">Ulos Suri-suri</h3>
+              <p class="font-bold text-ru-red text-sm">Rp 650.000</p>
+            </div>
+          </div>
+          <div
+            class="product-card bg-white border border-gray-100 reveal delay-300"
+          >
+            <div
+              class="img-wrap h-44 gallery-item"
+              data-lightbox="assets/12.jpeg"
+              data-caption="Ulos Antak-antak"
+            >
+              <img
+                src="assets/12.jpeg"
+                alt="Ulos Antak-antak"
+                class="w-full h-full object-contain bg-gray-50 brightness-110"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-sm mb-1">Ulos Antak-antak</h3>
+              <p class="font-bold text-ru-red text-sm">Rp 1.800.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-10 reveal">
+          <a
+            href="https://wa.me/6281234567890?text=Halo, saya ingin melihat katalog lengkap Rumah Ulos"
+            target="_blank"
+            class="inline-block border-b-2 border-ru-black text-ru-black hover:text-ru-red hover:border-ru-red transition-all font-serif italic text-lg pb-1"
+            >Hubungi kami untuk katalog lengkap →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div
+      id="lightbox"
+      class="hidden fixed inset-0 z-[100] bg-white/95 backdrop-blur-md flex items-center justify-center px-4"
+    >
+      <button
+        id="lightbox-close"
+        class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 transition-colors"
+      >
+        <svg
+          class="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+      <button
+        id="lightbox-prev"
+        class="absolute left-4 md:left-8 text-gray-400 hover:text-gray-900 transition-colors"
+      >
+        <svg
+          class="w-10 h-10"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+      <div class="max-w-4xl w-full text-center">
+        <img
+          id="lightbox-img"
+          src=""
+          alt=""
+          class="max-h-[80vh] w-auto mx-auto object-contain rounded-sm shadow-xl border border-gray-200"
+        />
+        <p
+          id="lightbox-caption"
+          class="text-gray-600 text-sm mt-4 font-normal"
+        ></p>
+      </div>
+      <button
+        id="lightbox-next"
+        class="absolute right-4 md:right-8 text-gray-400 hover:text-gray-900 transition-colors"
+      >
+        <svg
+          class="w-10 h-10"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-ru-black text-gray-400 pt-16 pb-8">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12"
+      >
+        <div class="md:col-span-2">
+          <a
+            href="index.html"
+            class="font-serif text-2xl font-bold text-white mb-4 flex items-center gap-1"
+            ><span class="text-ru-gold">Rumah</span><span> Ulos</span></a
+          >
+          <p class="text-sm font-light leading-relaxed max-w-sm mt-3">
+            Menjaga warisan budaya Batak tetap hidup melalui kain ulos
+            berkualitas tinggi yang ditenun dengan cinta.
+          </p>
+        </div>
+        <div>
+          <h4
+            class="text-white font-semibold mb-4 text-sm tracking-wide uppercase"
+          >
+            Halaman
+          </h4>
+          <ul class="space-y-2 text-sm font-light">
+            <li>
+              <a href="index.html" class="hover:text-ru-gold transition-colors"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="products.html"
+                class="hover:text-ru-gold transition-colors"
+                >Produk</a
+              >
+            </li>
+            <li>
+              <a
+                href="gallery.html"
+                class="hover:text-ru-gold transition-colors"
+                >Galeri</a
+              >
+            </li>
+            <li>
+              <a
+                href="business.html"
+                class="hover:text-ru-gold transition-colors"
+                >Bisnis</a
+              >
+            </li>
+            <li>
+              <a href="team.html" class="hover:text-ru-gold transition-colors"
+                >Tim & Kontak</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4
+            class="text-white font-semibold mb-4 text-sm tracking-wide uppercase"
+          >
+            Kontak
+          </h4>
+          <address class="not-italic text-sm font-light space-y-2">
+            <p>Jl. Jamin Ginting No. 88, Medan</p>
+            <p>+62 812 3456 7890</p>
+            <p>info@rumahulos.co.id</p>
+          </address>
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-gray-900 text-center text-xs tracking-wider"
+      >
+        © 2026 Rumah Ulos. Semua hak dilindungi.
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
