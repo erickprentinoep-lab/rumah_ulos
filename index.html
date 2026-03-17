@@ -1,938 +1,615 @@
 <!doctype html>
 <html lang="id" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rumah Ulos — Warisan Batak, Semangat Modern</title>
-    <meta
-      name="description"
-      content="Rumah Ulos menghadirkan koleksi kain ulos autentik Batak dengan sentuhan modern. Unggulan, Luxury, Inovasi Gen Z, dan lebih banyak lagi."
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              "ru-red": "#8B0000",
-              "ru-red-dark": "#6B0000",
-              "ru-gold": "#ca8a04",
-              "ru-black": "#0a0a0a",
-              "ru-white": "#fdfbf7", // Warm luxurious off-white
-              "ru-cream": "#f9f6f0",
-            },
-            fontFamily: {
-              sans: ["Inter", "sans-serif"],
-              serif: ["Playfair Display", "serif"],
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rumah Ulos — Warisan Batak, Semangat Modern</title>
+  <meta name="description"
+    content="Rumah Ulos menghadirkan koleksi kain ulos autentik Batak dengan sentuhan modern. Unggulan, Luxury, Inovasi Gen Z, dan lebih banyak lagi." />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "ru-red": "#8B0000",
+            "ru-red-dark": "#6B0000",
+            "ru-gold": "#ca8a04",
+            "ru-black": "#0a0a0a",
+            "ru-white": "#fdfbf7", // Warm luxurious off-white
+            "ru-cream": "#f9f6f0",
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            serif: ["Playfair Display", "serif"],
           },
         },
-      };
-    </script>
-  </head>
+      },
+    };
+  </script>
+</head>
 
-  <body class="antialiased">
-    <!-- ===================== NAVBAR ===================== -->
-    <nav
-      id="navbar"
-      class="fixed w-full z-50 transition-all duration-500"
-      style="padding: 0.75rem 0"
-    >
+<body class="antialiased">
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="navbar" class="fixed w-full z-50 transition-all duration-500" style="padding: 0.75rem 0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/logo.png" alt="Rumah Ulos" class="h-10 w-auto object-contain logo-gold drop-shadow-md" />
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center space-x-7 text-sm font-medium tracking-wide">
+        <a href="index.html" data-nav class="hover:text-ru-gold transition-colors duration-200">Beranda</a>
+        <a href="products.html" data-nav class="hover:text-ru-gold transition-colors duration-200">Produk</a>
+        <a href="gallery.html" data-nav class="hover:text-ru-gold transition-colors duration-200">Galeri</a>
+        <a href="business.html" data-nav class="hover:text-ru-gold transition-colors duration-200">Bisnis</a>
+        <a href="team.html" data-nav class="hover:text-ru-gold transition-colors duration-200">Tim</a>
+      </div>
+
+      <!-- CTA -->
+      <a href="https://wa.me/6281362359569" target="_blank"
+        class="hidden md:inline-flex items-center gap-2 bg-ru-red hover:bg-ru-red-dark text-white px-5 py-2.5 rounded-full text-sm font-semibold btn-primary transition-all">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+        </svg>
+        Hubungi Kami
+      </a>
+
+      <!-- Hamburger -->
+      <button id="mobile-menu-btn" class="md:hidden text-white p-1" aria-label="Menu">
+        <svg class="icon-open w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg class="icon-close hidden w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-ru-black border-b border-white/10">
+      <div class="flex flex-col space-y-1 px-6 py-4 text-sm font-medium">
+        <a href="index.html" data-nav class="py-2 hover:text-ru-gold transition-colors">Beranda</a>
+        <a href="products.html" data-nav class="py-2 hover:text-ru-gold transition-colors">Produk</a>
+        <a href="gallery.html" data-nav class="py-2 hover:text-ru-gold transition-colors">Galeri</a>
+        <a href="business.html" data-nav class="py-2 hover:text-ru-gold transition-colors">Bisnis</a>
+        <a href="team.html" data-nav class="py-2 hover:text-ru-gold transition-colors">Tim</a>
+        <a href="https://wa.me/6281234567890" target="_blank"
+          class="mt-2 text-center bg-ru-red text-white py-2.5 rounded-full font-semibold">Hubungi Kami</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-ru-white">
+    <!-- Background & Depth Layers -->
+    <div class="absolute inset-0 z-0">
+      <!-- Main Image with Parallax Base -->
+      <div class="hero-parallax-layer absolute inset-0" data-speed="0.02">
+        <img src="assets/51.jpg" alt="Kain Ulos Premium" class="w-full h-full object-cover object-center scale-110"
+          style="animation: slowZoom 20s ease-in-out infinite alternate" />
+      </div>
+
+      <!-- Gradient Overlay for Depth -->
+      <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/30 z-10"></div>
+
+      <!-- Light Glow Effect -->
       <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center"
-      >
-        <!-- Logo -->
-        <a href="index.html" class="flex items-center">
-          <img
-            src="assets/logo.png"
-            alt="Rumah Ulos"
-            class="h-10 w-auto object-contain logo-gold drop-shadow-md"
-          />
-        </a>
-
-        <!-- Desktop Nav -->
-        <div
-          class="hidden md:flex items-center space-x-7 text-sm font-medium tracking-wide"
-        >
-          <a
-            href="index.html"
-            data-nav
-            class="hover:text-ru-gold transition-colors duration-200"
-            >Beranda</a
-          >
-          <a
-            href="products.html"
-            data-nav
-            class="hover:text-ru-gold transition-colors duration-200"
-            >Produk</a
-          >
-          <a
-            href="gallery.html"
-            data-nav
-            class="hover:text-ru-gold transition-colors duration-200"
-            >Galeri</a
-          >
-          <a
-            href="business.html"
-            data-nav
-            class="hover:text-ru-gold transition-colors duration-200"
-            >Bisnis</a
-          >
-          <a
-            href="team.html"
-            data-nav
-            class="hover:text-ru-gold transition-colors duration-200"
-            >Tim</a
-          >
-        </div>
-
-        <!-- CTA -->
-        <a
-          href="https://wa.me/6281234567890"
-          target="_blank"
-          class="hidden md:inline-flex items-center gap-2 bg-ru-red hover:bg-ru-red-dark text-white px-5 py-2.5 rounded-full text-sm font-semibold btn-primary transition-all"
-        >
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
-            />
-          </svg>
-          Hubungi Kami
-        </a>
-
-        <!-- Hamburger -->
-        <button
-          id="mobile-menu-btn"
-          class="md:hidden text-white p-1"
-          aria-label="Menu"
-        >
-          <svg
-            class="icon-open w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-          <svg
-            class="icon-close hidden w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div
-        id="mobile-menu"
-        class="md:hidden absolute top-full left-0 w-full bg-ru-black border-b border-white/10"
-      >
-        <div class="flex flex-col space-y-1 px-6 py-4 text-sm font-medium">
-          <a
-            href="index.html"
-            data-nav
-            class="py-2 hover:text-ru-gold transition-colors"
-            >Beranda</a
-          >
-          <a
-            href="products.html"
-            data-nav
-            class="py-2 hover:text-ru-gold transition-colors"
-            >Produk</a
-          >
-          <a
-            href="gallery.html"
-            data-nav
-            class="py-2 hover:text-ru-gold transition-colors"
-            >Galeri</a
-          >
-          <a
-            href="business.html"
-            data-nav
-            class="py-2 hover:text-ru-gold transition-colors"
-            >Bisnis</a
-          >
-          <a
-            href="team.html"
-            data-nav
-            class="py-2 hover:text-ru-gold transition-colors"
-            >Tim</a
-          >
-          <a
-            href="https://wa.me/6281234567890"
-            target="_blank"
-            class="mt-2 text-center bg-ru-red text-white py-2.5 rounded-full font-semibold"
-            >Hubungi Kami</a
-          >
-        </div>
-      </div>
-    </nav>
-
-    <!-- ===================== HERO ===================== -->
-    <section
-      id="hero"
-      class="relative min-h-screen flex items-center justify-center overflow-hidden bg-ru-white"
-    >
-      <!-- Background & Depth Layers -->
-      <div class="absolute inset-0 z-0">
-        <!-- Main Image with Parallax Base -->
-        <div class="hero-parallax-layer absolute inset-0" data-speed="0.02">
-          <img
-            src="assets/51.jpg"
-            alt="Kain Ulos Premium"
-            class="w-full h-full object-cover object-center scale-110"
-            style="animation: slowZoom 20s ease-in-out infinite alternate"
-          />
-        </div>
-
-        <!-- Gradient Overlay for Depth -->
-        <div
-          class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/30 z-10"
-        ></div>
-
-        <!-- Light Glow Effect -->
-        <div
-          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-ru-gold/5 rounded-full blur-[120px] z-10"
-        ></div>
-      </div>
-
-      <!-- Content (Elegant Minimalist) -->
-      <div
-        class="hero-content text-white text-center px-4 max-w-4xl mx-auto"
-        style="padding-top: 7rem"
-      >
-        <!-- Minimalist Badge -->
-        <div class="reveal inline-block mb-10 overflow-hidden">
-          <span
-            class="block text-[0.65rem] tracking-[0.4em] uppercase text-white/80 font-medium border-b border-white/30 pb-2"
-          >
-            Warisan · Sejak 2008
-          </span>
-        </div>
-
-        <!-- Main Headline (Premium Typography) -->
-        <h1 class="reveal delay-100 mb-10">
-          <span class="reveal-text block">
-            <span
-              class="text-xs tracking-[1em] uppercase text-white/60 mb-4 block font-medium"
-              >Authentic Craftsmanship</span
-            >
-          </span>
-          <span
-            class="block text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-serif italic tracking-tighter text-white leading-none overflow-hidden pb-4 drop-shadow-lg"
-          >
-            <span
-              class="inline-block hover:scale-105 transition-transform duration-700 cursor-default"
-              >Rumah Ulos</span
-            >
-          </span>
-          <span class="block h-px w-24 bg-white/40 mx-auto mt-4"></span>
-        </h1>
-
-        <!-- Minimalist Subtitle -->
-        <p
-          class="reveal delay-200 text-base md:text-lg text-white/80 font-light max-w-xl mx-auto mb-12 leading-relaxed tracking-wide drop-shadow"
-        >
-          Menenun cerita, merawat alam, dan menghadirkan kemewahan tradisi dalam
-          sehelai karya seni.
-        </p>
-
-        <!-- Minimalist CTA -->
-        <div
-          class="reveal delay-300 flex flex-col sm:flex-row gap-6 justify-center w-full max-w-sm mx-auto mb-16"
-        >
-          <a
-            href="products.html"
-            class="btn-luxury bg-ru-red text-white px-10 py-4 rounded-sm font-light tracking-[0.2em] text-[10px] uppercase w-full sm:w-auto text-center overflow-hidden"
-          >
-            <span class="relative z-10">Koleksi Kami</span>
-          </a>
-          <a
-            href="#about"
-            class="btn-luxury bg-white/20 border border-white/40 text-white px-10 py-4 rounded-sm font-light tracking-[0.2em] text-[10px] uppercase w-full sm:w-auto text-center backdrop-blur-md"
-          >
-            <span class="relative z-10">Filosofi</span>
-          </a>
-        </div>
-
-        <!-- Scroll indicator (Moved here) -->
-        <div class="reveal delay-400 flex flex-col items-center gap-3">
-          <span
-            class="text-[9px] tracking-[0.5em] ml-[0.5em] uppercase text-white/60 font-bold"
-            >Scroll</span
-          >
-          <div class="relative w-[1px] h-12 bg-white/30 overflow-hidden">
-            <div
-              class="absolute top-0 left-0 w-full h-full bg-white origin-top animate-scroll-line"
-            ></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== STATS STRIP ===================== -->
-    <div class="bg-ru-cream border-y border-ru-black/5">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div
-          class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-ru-black"
-        >
-          <div class="reveal">
-            <p
-              class="font-serif text-4xl font-bold text-ru-red"
-              data-count="18"
-              data-suffix="+"
-            >
-              18+
-            </p>
-            <p class="text-gray-500 text-sm mt-1 tracking-wide font-medium">
-              Tahun Berpengalaman
-            </p>
-          </div>
-          <div class="reveal delay-100">
-            <p
-              class="font-serif text-4xl font-bold text-ru-red"
-              data-count="2400"
-              data-suffix="+"
-            >
-              2400+
-            </p>
-            <p class="text-gray-500 text-sm mt-1 tracking-wide font-medium">
-              Pelanggan Puas
-            </p>
-          </div>
-          <div class="reveal delay-200">
-            <p
-              class="font-serif text-4xl font-bold text-ru-red"
-              data-count="50"
-              data-suffix="+"
-            >
-              50+
-            </p>
-            <p class="text-gray-500 text-sm mt-1 tracking-wide font-medium">
-              Koleksi Produk
-            </p>
-          </div>
-          <div class="reveal delay-300">
-            <p
-              class="font-serif text-4xl font-bold text-ru-red"
-              data-count="15"
-              data-suffix=" Kota"
-            >
-              15 Kota
-            </p>
-            <p class="text-gray-500 text-sm mt-1 tracking-wide font-medium">
-              Jangkauan Distribusi
-            </p>
-          </div>
-        </div>
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-ru-gold/5 rounded-full blur-[120px] z-10">
       </div>
     </div>
 
-    <!-- ===================== ABOUT & WHY US (LIGHT LUXURY REDESIGN) ===================== -->
-    <section id="about" class="py-32 relative overflow-hidden bg-ru-white">
-      <!-- Abstract Motif Background -->
-      <div
-        class="absolute inset-0 opacity-[0.03] mix-blend-multiply"
-        style="
+    <!-- Content (Elegant Minimalist) -->
+    <div class="hero-content text-white text-center px-4 max-w-4xl mx-auto" style="padding-top: 7rem">
+      <!-- Minimalist Badge -->
+      <div class="reveal inline-block mb-10 overflow-hidden">
+        <span
+          class="block text-[0.65rem] tracking-[0.4em] uppercase text-white/80 font-medium border-b border-white/30 pb-2">
+          Warisan · Sejak 2008
+        </span>
+      </div>
+
+      <!-- Main Headline (Premium Typography) -->
+      <h1 class="reveal delay-100 mb-10">
+        <span class="reveal-text block">
+          <span class="text-xs tracking-[1em] uppercase text-white/60 mb-4 block font-medium">Authentic
+            Craftsmanship</span>
+        </span>
+        <span
+          class="block text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-serif italic tracking-tighter text-white leading-none overflow-hidden pb-4 drop-shadow-lg">
+          <span class="inline-block hover:scale-105 transition-transform duration-700 cursor-default">Rumah Ulos</span>
+        </span>
+        <span class="block h-px w-24 bg-white/40 mx-auto mt-4"></span>
+      </h1>
+
+      <!-- Minimalist Subtitle -->
+      <p
+        class="reveal delay-200 text-base md:text-lg text-white/80 font-light max-w-xl mx-auto mb-12 leading-relaxed tracking-wide drop-shadow">
+        Menenun cerita, merawat alam, dan menghadirkan kemewahan tradisi dalam
+        sehelai karya seni.
+      </p>
+
+      <!-- Minimalist CTA -->
+      <div class="reveal delay-300 flex flex-col sm:flex-row gap-6 justify-center w-full max-w-sm mx-auto mb-16">
+        <a href="products.html"
+          class="btn-luxury bg-ru-red text-white px-10 py-4 rounded-sm font-light tracking-[0.2em] text-[10px] uppercase w-full sm:w-auto text-center overflow-hidden">
+          <span class="relative z-10">Koleksi Kami</span>
+        </a>
+        <a href="#about"
+          class="btn-luxury bg-white/20 border border-white/40 text-white px-10 py-4 rounded-sm font-light tracking-[0.2em] text-[10px] uppercase w-full sm:w-auto text-center backdrop-blur-md">
+          <span class="relative z-10">Filosofi</span>
+        </a>
+      </div>
+
+      <!-- Scroll indicator (Moved here) -->
+      <div class="reveal delay-400 flex flex-col items-center gap-3">
+        <span class="text-[9px] tracking-[0.5em] ml-[0.5em] uppercase text-white/60 font-bold">Scroll</span>
+        <div class="relative w-[1px] h-12 bg-white/30 overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-full bg-white origin-top animate-scroll-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS STRIP ===================== -->
+  <div class="bg-ru-cream border-y border-ru-black/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-ru-black">
+        <div class="reveal">
+          <p class="font-serif text-4xl font-bold text-ru-red" data-count="18" data-suffix="+">
+            18+
+          </p>
+          <p class="text-gray-500 text-sm mt-1 tracking-wide font-medium">
+            Tahun Berpengalaman
+          </p>
+        </div>
+        <div class="reveal delay-100">
+          <p class="font-serif text-4xl font-bold text-ru-red" data-count="2400" data-suffix="+">
+            2400+
+          </p>
+          <p class="text-gray-500 text-sm mt-1 tracking-wide font-medium">
+            Pelanggan Puas
+          </p>
+        </div>
+        <div class="reveal delay-200">
+          <p class="font-serif text-4xl font-bold text-ru-red" data-count="50" data-suffix="+">
+            50+
+          </p>
+          <p class="text-gray-500 text-sm mt-1 tracking-wide font-medium">
+            Koleksi Produk
+          </p>
+        </div>
+        <div class="reveal delay-300">
+          <p class="font-serif text-4xl font-bold text-ru-red" data-count="15" data-suffix=" Kota">
+            15 Kota
+          </p>
+          <p class="text-gray-500 text-sm mt-1 tracking-wide font-medium">
+            Jangkauan Distribusi
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== ABOUT & WHY US (LIGHT LUXURY REDESIGN) ===================== -->
+  <section id="about" class="py-32 relative overflow-hidden bg-ru-white">
+    <!-- Abstract Motif Background -->
+    <div class="absolute inset-0 opacity-[0.03] mix-blend-multiply" style="
           background-image: url(&quot;assets/ulos_motif_1773415959494.png&quot;);
           background-size: 300px;
-        "
-      ></div>
+        "></div>
 
-      <!-- Gradient glow -->
-      <div
-        class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-ru-cream to-transparent pointer-events-none"
-      ></div>
+    <!-- Gradient glow -->
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-ru-cream to-transparent pointer-events-none">
+    </div>
 
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <!-- Section Header -->
-        <div
-          class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8"
-        >
-          <div class="max-w-2xl reveal">
-            <span
-              class="inline-block text-ru-red text-xs tracking-[0.3em] uppercase mb-4 font-semibold border-b border-ru-red/30 pb-2"
-              >Tentang Kami</span
-            >
-            <h2
-              class="font-serif text-5xl md:text-6xl text-gray-900 leading-tight"
-            >
-              Lebih dari <span class="italic text-ru-red">Sekadar Kain.</span
-              ><br />
-              Sebuah <span class="text-ru-gold">Evolusi Warisan.</span>
-            </h2>
-          </div>
-          <div class="max-w-md reveal delay-100">
-            <p
-              class="text-gray-600 font-light leading-relaxed border-l border-ru-gold/40 pl-6"
-            >
-              Menjaga warisan budaya Batak agar tetap relevan lintas zaman,
-              dengan memadukan tenun lawas, warna alam, dan sentuhan kemewahan
-              masa kini.
-            </p>
-          </div>
-        </div>
-
-        <!-- Main Content Split -->
-        <div
-          class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 items-start"
-        >
-          <!-- Left Column: Editorial Image & Intro (Spans 5 cols) -->
-          <div class="lg:col-span-5 relative reveal-left">
-            <!-- Staggered Image Layout -->
-            <div
-              class="relative w-full aspect-[4/5] md:w-3/4 lg:w-full mx-auto"
-            >
-              <!-- Offset Gold Border (Pseudo-frame) -->
-              <div
-                class="absolute inset-0 border border-ru-gold rounded-t-[10rem] rounded-b-sm translate-x-4 translate-y-4"
-              ></div>
-              <!-- Main Image Container -->
-              <div
-                class="relative w-full h-full rounded-t-[10rem] rounded-b-sm overflow-hidden shadow-xl"
-              >
-                <!-- Subtle zoom effect on hover -->
-                <img
-                  src="assets/47.jpeg"
-                  alt="Pengrajin Ulos"
-                  class="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-                />
-                <!-- Light gradient overlay -->
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-gray-900/30 via-transparent to-transparent opacity-90"
-                ></div>
-              </div>
-              <!-- Floating Luxury Badge -->
-              <div
-                class="absolute -bottom-6 -right-6 md:-right-10 bg-gradient-to-br from-white to-ru-cream text-ru-red p-6 rounded-full w-32 h-32 flex flex-col items-center justify-center shadow-2xl border border-gray-100 rotate-[15deg] hover:rotate-0 transition-transform duration-500 z-20 group cursor-default"
-              >
-                <span
-                  class="font-serif text-3xl font-bold group-hover:scale-110 transition-transform"
-                  >100%</span
-                >
-                <span
-                  class="text-[9px] tracking-[0.2em] uppercase mt-1 font-semibold text-gray-500"
-                  >Tenun Asli</span
-                >
-              </div>
-            </div>
-
-            <!-- Philosophy Typography Element -->
-            <div class="mt-16 ml-2 md:ml-8 relative">
-              <strong
-                class="block text-gray-900 font-serif text-2xl mb-4 tracking-wide"
-                >Filosofi Kami</strong
-              >
-              <p
-                class="text-gray-600 font-light leading-relaxed text-justify relative z-10 pl-6 border-l border-gray-200"
-              >
-                <span
-                  class="absolute -left-2 -top-6 text-gray-200 font-serif text-8xl z-0 select-none"
-                  >"</span
-                >
-                Berawal dari kecintaan pada Ulos sebagai elemen sakral Batak,
-                kami bergerak memberdayakan masyarakat desa. Kami merestorasi
-                motif lawas dengan benang kristal, payet, dan pewarna alam,
-                menciptakan songket Batak super mewah dan modern—menjadikan
-                pemakainya pusat perhatian.
-              </p>
-            </div>
-          </div>
-
-          <!-- Right Column: 6 Reasons in an elegant staggered list (Spans 7 cols) -->
-          <div
-            class="lg:col-span-7 lg:pl-12 flex flex-col justify-center mt-12 lg:mt-0"
-          >
-            <div
-              class="space-y-0 relative before:absolute before:inset-y-0 before:left-[27px] before:w-px before:bg-gradient-to-b before:from-ru-gold/40 before:via-ru-gold/20 before:to-transparent"
-            >
-              <!-- Item 1 -->
-              <div
-                class="relative pl-16 py-8 group border-b border-gray-100 reveal delay-100 min-h-[140px] flex flex-col justify-center"
-              >
-                <div
-                  class="absolute left-0 top-1/2 -translate-y-1/2 w-[55px] h-[55px] rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-ru-cream group-hover:border-ru-gold transition-all duration-500 z-10 shadow-[0_5px_15px_rgba(0,0,0,0.05)] group-hover:shadow-[0_10px_25px_rgba(202,138,4,0.15)]"
-                >
-                  <span
-                    class="font-serif text-xl font-bold text-gray-400 group-hover:text-ru-red transition-colors"
-                    >01</span
-                  >
-                </div>
-                <h4
-                  class="font-serif text-2xl text-gray-900 mb-2 group-hover:text-ru-red transition-colors duration-300"
-                >
-                  Pemberdayaan Berkelanjutan
-                </h4>
-                <p class="text-gray-500 font-light text-sm leading-relaxed">
-                  Hasil karya wanita pengrajin dari nol yang diberdayakan secara
-                  berkesinambungan melalui pelatihan dan pendampingan jangka
-                  panjang.
-                </p>
-              </div>
-
-              <!-- Item 2 -->
-              <div
-                class="relative pl-16 py-8 group border-b border-gray-100 reveal delay-200 min-h-[140px] flex flex-col justify-center"
-              >
-                <div
-                  class="absolute left-0 top-1/2 -translate-y-1/2 w-[55px] h-[55px] rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-ru-cream group-hover:border-ru-gold transition-all duration-500 z-10 shadow-[0_5px_15px_rgba(0,0,0,0.05)] group-hover:shadow-[0_10px_25px_rgba(202,138,4,0.15)]"
-                >
-                  <span
-                    class="font-serif text-xl font-bold text-gray-400 group-hover:text-ru-red transition-colors"
-                    >02</span
-                  >
-                </div>
-                <h4
-                  class="font-serif text-2xl text-gray-900 mb-2 group-hover:text-ru-red transition-colors duration-300"
-                >
-                  Evolusi Kualitas & Kemewahan
-                </h4>
-                <p class="text-gray-500 font-light text-sm leading-relaxed">
-                  Dari teknik tenun hingga bahan baku, setiap produk terus
-                  mengalami peningkatan tanpa henti demi mencapai standar
-                  kemewahan tertinggi.
-                </p>
-              </div>
-
-              <!-- Item 3 -->
-              <div
-                class="relative pl-16 py-8 group border-b border-gray-100 reveal delay-300 min-h-[140px] flex flex-col justify-center"
-              >
-                <div
-                  class="absolute left-0 top-1/2 -translate-y-1/2 w-[55px] h-[55px] rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-ru-cream group-hover:border-ru-gold transition-all duration-500 z-10 shadow-[0_5px_15px_rgba(0,0,0,0.05)] group-hover:shadow-[0_10px_25px_rgba(202,138,4,0.15)]"
-                >
-                  <span
-                    class="font-serif text-xl font-bold text-gray-400 group-hover:text-ru-red transition-colors"
-                    >03</span
-                  >
-                </div>
-                <h4
-                  class="font-serif text-2xl text-gray-900 mb-2 group-hover:text-ru-red transition-colors duration-300"
-                >
-                  Restorasi Ulos Lawas
-                </h4>
-                <p class="text-gray-500 font-light text-sm leading-relaxed">
-                  Melakukan riset mendalam, pelacakan, dan menghidupkan kembali
-                  motif-motif langka dari Ulos kuno yang hampir punah.
-                </p>
-              </div>
-
-              <!-- Item 4 -->
-              <div
-                class="relative pl-16 py-8 group border-b border-gray-100 reveal delay-400 min-h-[140px] flex flex-col justify-center"
-              >
-                <div
-                  class="absolute left-0 top-1/2 -translate-y-1/2 w-[55px] h-[55px] rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-ru-cream group-hover:border-ru-gold transition-all duration-500 z-10 shadow-[0_5px_15px_rgba(0,0,0,0.05)] group-hover:shadow-[0_10px_25px_rgba(202,138,4,0.15)]"
-                >
-                  <span
-                    class="font-serif text-xl font-bold text-gray-400 group-hover:text-ru-red transition-colors"
-                    >04</span
-                  >
-                </div>
-                <h4
-                  class="font-serif text-2xl text-gray-900 mb-2 group-hover:text-ru-red transition-colors duration-300"
-                >
-                  Palet Warna Alam Futuristik
-                </h4>
-                <p class="text-gray-500 font-light text-sm leading-relaxed">
-                  Meracik pewarna alami dari ekstrak kulit kayu dan dedaunan
-                  untuk menciptakan paduan warna futuristik yang ramah
-                  lingkungan.
-                </p>
-              </div>
-
-              <!-- Item 5 -->
-              <div
-                class="relative pl-16 py-8 group border-b border-gray-100 reveal delay-500 min-h-[140px] flex flex-col justify-center"
-              >
-                <div
-                  class="absolute left-0 top-1/2 -translate-y-1/2 w-[55px] h-[55px] rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-ru-cream group-hover:border-ru-gold transition-all duration-500 z-10 shadow-[0_5px_15px_rgba(0,0,0,0.05)] group-hover:shadow-[0_10px_25px_rgba(202,138,4,0.15)]"
-                >
-                  <span
-                    class="font-serif text-xl font-bold text-gray-400 group-hover:text-ru-red transition-colors"
-                    >05</span
-                  >
-                </div>
-                <h4
-                  class="font-serif text-2xl text-gray-900 mb-2 group-hover:text-ru-red transition-colors duration-300"
-                >
-                  Kolaborasi Tenun Tersulit
-                </h4>
-                <p class="text-gray-500 font-light text-sm leading-relaxed">
-                  Memadukan motif lawas yang rumit dengan benang organik, benang
-                  kristal, serta payet mewah dalam satu kanvas tenun mesin
-                  tradisional.
-                </p>
-              </div>
-
-              <!-- Item 6 -->
-              <div
-                class="relative pl-16 py-8 group reveal delay-600 min-h-[140px] flex flex-col justify-center"
-              >
-                <div
-                  class="absolute left-0 top-1/2 -translate-y-1/2 w-[55px] h-[55px] rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-ru-cream group-hover:border-ru-gold transition-all duration-500 z-10 shadow-[0_5px_15px_rgba(0,0,0,0.05)] group-hover:shadow-[0_10px_25px_rgba(202,138,4,0.15)]"
-                >
-                  <span
-                    class="font-serif text-xl font-bold text-gray-400 group-hover:text-ru-red transition-colors"
-                    >06</span
-                  >
-                </div>
-                <h4
-                  class="font-serif text-2xl text-gray-900 mb-2 group-hover:text-ru-red transition-colors duration-300"
-                >
-                  Kemewahan Tak Terduga
-                </h4>
-                <p class="text-gray-500 font-light text-sm leading-relaxed">
-                  Diproduksi sangat terbatas, 100% berbeda, dan menjamin Anda
-                  menjadi pusat perhatian.<br /><em
-                    class="text-ru-red/80 block mt-2"
-                    >"Belum punya produk Rumah Ulos, berarti belum
-                    eksklusif."</em
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== PROGRESS ===================== -->
-    <section
-      id="progress"
-      class="py-24 relative overflow-hidden bg-ru-cream border-t border-gray-100"
-    >
-      <!-- Abstract pattern overlay -->
-      <div
-        class="absolute inset-0 opacity-[0.03] mix-blend-multiply"
-        style="
-          background-image: url(&quot;assets/ulos_motif_1773415959494.png&quot;);
-          background-size: 250px;
-        "
-      ></div>
-
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <!-- Heading -->
-        <div class="text-center mb-16">
-          <h2
-            class="reveal font-serif text-4xl md:text-5xl lg:text-6xl text-gray-900 mb-4 tracking-wide uppercase"
-          >
-            Progres<span class="text-ru-red">/</span>Status
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+        <div class="max-w-2xl reveal">
+          <span
+            class="inline-block text-ru-red text-xs tracking-[0.3em] uppercase mb-4 font-semibold border-b border-ru-red/30 pb-2">Tentang
+            Kami</span>
+          <h2 class="font-serif text-5xl md:text-6xl text-gray-900 leading-tight">
+            Lebih dari <span class="italic text-ru-red">Sekadar Kain.</span><br />
+            Sebuah <span class="text-ru-gold">Evolusi Warisan.</span>
           </h2>
-          <div class="w-24 h-px bg-ru-red/40 mx-auto mb-6"></div>
-          <h3
-            class="reveal delay-100 text-sm md:text-base tracking-[0.2em] uppercase text-ru-gold font-semibold"
-          >
-            Penguatan Produk Unggulan
-          </h3>
         </div>
-
-        <!-- Grid Layout -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
-          <!-- Column 1: Launching -->
-          <div class="reveal flex flex-col gap-6">
-            <h4
-              class="text-center uppercase tracking-widest text-ru-red text-xs md:text-sm font-bold h-12 flex items-center justify-center"
-            >
-              Launching Produk Inovasi<br />Baru
-            </h4>
-            <div
-              class="w-full aspect-[3/4] rounded-t-full rounded-b-md overflow-hidden shadow-2xl border-4 border-white"
-            >
-              <img
-                src="assets/launching_poster.png"
-                alt="Launching RUMAH ULOS"
-                class="w-full h-full object-cover"
-              />
-            </div>
-            <p
-              class="text-sm text-gray-600 leading-relaxed font-light mt-4 text-justify px-2"
-            >
-              Launching produk baru setiap 3 bulan dalam kapasitas tertentu.
-              Berasal dari Program Revitalisasi Ulos Lawas mix pelatihan
-              peningkatan skill penenun, menciptakan ledakan pendapatan bagi
-              Rumah Ulos pada saat peluncuran.
-            </p>
-          </div>
-
-          <!-- Column 2: Gen Z & Luxury -->
-          <div class="reveal delay-100 flex flex-col gap-6">
-            <div class="grid grid-cols-2 gap-4">
-              <h4
-                class="text-center uppercase tracking-widest text-ru-red text-xs md:text-sm font-bold h-12 flex items-center justify-center"
-              >
-                Ulos For Gen Z
-              </h4>
-              <h4
-                class="text-center uppercase tracking-widest text-ru-red text-xs md:text-sm font-bold h-12 flex items-center justify-center"
-              >
-                Luxury On Ulos
-              </h4>
-            </div>
-
-            <!-- Image Collage -->
-            <div class="grid grid-cols-2 gap-4 aspect-[4/5] w-full">
-              <!-- Gen Z Images (Left side) -->
-              <div class="flex flex-col gap-4 h-full">
-                <!-- top half -->
-                <div
-                  class="h-[48%] rounded-sm overflow-hidden shadow-xl border border-white"
-                >
-                  <img
-                    src="assets/product_genz.png"
-                    alt="Ulos Gen Z"
-                    class="w-full h-full object-cover"
-                  />
-                </div>
-                <!-- bottom half -->
-                <div
-                  class="h-[48%] rounded-sm overflow-hidden shadow-xl border border-white"
-                >
-                  <img
-                    src="assets/56.jpeg"
-                    alt="Ulos Wedding"
-                    class="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-
-              <!-- Luxury Image (Right side) -->
-              <div
-                class="h-full rounded-t-full rounded-b-md overflow-hidden shadow-2xl border-4 border-white"
-              >
-                <img
-                  src="assets/63.jpeg"
-                  alt="Luxury Ulos"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-
-            <!-- Description text -->
-            <div class="grid grid-cols-2 gap-4 mt-4 px-2">
-              <p
-                class="text-xs text-gray-600 leading-relaxed font-light text-justify border-t border-gray-200 pt-4"
-              >
-                <strong class="font-bold text-gray-900 block mb-1"
-                  >Pelopor bagi Gen Z</strong
-                >
-                Saat ini para kaum muda akan menjadi generasi yang akan mewarisi
-                ulos, oleh karena itu kami terus berinovasi agar mereka
-                mencintai ulos dengan warna mereka
-              </p>
-              <p
-                class="text-xs text-gray-600 leading-relaxed font-light text-justify border-t border-gray-200 pt-4"
-              >
-                <strong class="font-bold text-gray-900 block mb-1"
-                  >Penyetaraan Fashion</strong
-                >
-                Untuk penyetaraan Fashion Ulos dengan produk-produk Branded
-                costumer, Ulos berkonsep mewah saat ini sedang produksi untuk
-                waiting list para costumer
-              </p>
-            </div>
-          </div>
-
-          <!-- Column 3: Galery -->
-          <div class="reveal delay-200 flex flex-col gap-6">
-            <h4
-              class="text-center uppercase tracking-widest text-ru-red text-xs md:text-sm font-bold h-12 flex items-center justify-center leading-relaxed"
-            >
-              Galery Rumah Produksi<br />Wisata Ulos
-            </h4>
-            <div
-              class="w-full aspect-[3/4] rounded-t-full rounded-b-md overflow-hidden relative shadow-2xl border-4 border-white group"
-            >
-              <img
-                src="assets/gallery_landscape.png"
-                alt="Galery Rumah Produksi"
-                class="w-full h-full object-cover brightness-105 group-hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-            <p
-              class="text-sm text-gray-600 leading-relaxed font-light mt-4 text-justify px-2"
-            >
-              Saat ini kami sedang mulai membangun Galery sekaligus tempat foto
-              prawedding etnik, Rumah produksi untuk menampung para penenun dan
-              penjahit lulusan SMK untuk bekerja membuat fashion dan home deor
-              Ulos.Pada bagian belakang sebagai tempat para laki-laki bekerja
-              mewarnai Benang secara alami.Kami akan menambah pekerja sekitar 15
-              orang Sebagai tempat wisata Ulos dan tempat pelatihan berbagai
-              produk dari Desa Ulos kami.
-            </p>
-          </div>
+        <div class="max-w-md reveal delay-100">
+          <p class="text-gray-600 font-light leading-relaxed border-l border-ru-gold/40 pl-6">
+            Menjaga warisan budaya Batak agar tetap relevan lintas zaman,
+            dengan memadukan tenun lawas, warna alam, dan sentuhan kemewahan
+            masa kini.
+          </p>
         </div>
       </div>
-    </section>
 
-    <!-- ===================== CTA STRIP ===================== -->
-    <div class="bg-ru-red py-16 text-white text-center">
-      <div class="max-w-4xl mx-auto px-4">
-        <h2 class="reveal font-serif text-3xl md:text-4xl font-bold mb-4">
-          Siap Menjelajahi Koleksi Kami?
-        </h2>
-        <p
-          class="reveal delay-100 text-red-100 font-light mb-8 max-w-xl mx-auto"
-        >
-          Temukan ulos unggulan, luxury, hingga inovasi untuk Gen Z — semuanya
-          tersedia.
-        </p>
-        <div
-          class="reveal delay-200 flex flex-col sm:flex-row gap-4 justify-center"
-        >
-          <a
-            href="products.html"
-            class="btn-primary bg-white text-ru-red hover:bg-gray-100 px-8 py-4 rounded-full font-bold transition-all shadow-lg"
-            >Lihat Semua Produk →</a
-          >
-          <a
-            href="gallery.html"
-            class="btn-primary border border-white/50 hover:bg-white/10 text-white px-8 py-4 rounded-full font-semibold transition-all"
-            >Galeri Foto</a
-          >
+      <!-- Main Content Split -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 items-start">
+        <!-- Left Column: Editorial Image & Intro (Spans 5 cols) -->
+        <div class="lg:col-span-5 relative reveal-left">
+          <!-- Staggered Image Layout -->
+          <div class="relative w-full aspect-[4/5] md:w-3/4 lg:w-full mx-auto">
+            <!-- Offset Gold Border (Pseudo-frame) -->
+            <div
+              class="absolute inset-0 border border-ru-gold rounded-t-[10rem] rounded-b-sm translate-x-4 translate-y-4">
+            </div>
+            <!-- Main Image Container -->
+            <div class="relative w-full h-full rounded-t-[10rem] rounded-b-sm overflow-hidden shadow-xl">
+              <!-- Subtle zoom effect on hover -->
+              <img src="assets/47.jpeg" alt="Pengrajin Ulos"
+                class="w-full h-full object-cover transition-transform duration-700 hover:scale-110" />
+              <!-- Light gradient overlay -->
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-900/30 via-transparent to-transparent opacity-90">
+              </div>
+            </div>
+            <!-- Floating Luxury Badge -->
+            <div
+              class="absolute -bottom-6 -right-6 md:-right-10 bg-gradient-to-br from-white to-ru-cream text-ru-red p-6 rounded-full w-32 h-32 flex flex-col items-center justify-center shadow-2xl border border-gray-100 rotate-[15deg] hover:rotate-0 transition-transform duration-500 z-20 group cursor-default">
+              <span class="font-serif text-3xl font-bold group-hover:scale-110 transition-transform">100%</span>
+              <span class="text-[9px] tracking-[0.2em] uppercase mt-1 font-semibold text-gray-500">Tenun Asli</span>
+            </div>
+          </div>
+
+          <!-- Philosophy Typography Element -->
+          <div class="mt-16 ml-2 md:ml-8 relative">
+            <strong class="block text-gray-900 font-serif text-2xl mb-4 tracking-wide">Filosofi Kami</strong>
+            <p
+              class="text-gray-600 font-light leading-relaxed text-justify relative z-10 pl-6 border-l border-gray-200">
+              <span class="absolute -left-2 -top-6 text-gray-200 font-serif text-8xl z-0 select-none">"</span>
+              Berawal dari kecintaan pada Ulos sebagai elemen sakral Batak,
+              kami bergerak memberdayakan masyarakat desa. Kami merestorasi
+              motif lawas dengan benang kristal, payet, dan pewarna alam,
+              menciptakan songket Batak super mewah dan modern—menjadikan
+              pemakainya pusat perhatian.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Column: 6 Reasons in an elegant staggered list (Spans 7 cols) -->
+        <div class="lg:col-span-7 lg:pl-12 flex flex-col justify-center mt-12 lg:mt-0">
+          <div
+            class="space-y-0 relative before:absolute before:inset-y-0 before:left-[27px] before:w-px before:bg-gradient-to-b before:from-ru-gold/40 before:via-ru-gold/20 before:to-transparent">
+            <!-- Item 1 -->
+            <div
+              class="relative pl-16 py-8 group border-b border-gray-100 reveal delay-100 min-h-[140px] flex flex-col justify-center">
+              <div
+                class="absolute left-0 top-1/2 -translate-y-1/2 w-[55px] h-[55px] rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-ru-cream group-hover:border-ru-gold transition-all duration-500 z-10 shadow-[0_5px_15px_rgba(0,0,0,0.05)] group-hover:shadow-[0_10px_25px_rgba(202,138,4,0.15)]">
+                <span
+                  class="font-serif text-xl font-bold text-gray-400 group-hover:text-ru-red transition-colors">01</span>
+              </div>
+              <h4 class="font-serif text-2xl text-gray-900 mb-2 group-hover:text-ru-red transition-colors duration-300">
+                Pemberdayaan Berkelanjutan
+              </h4>
+              <p class="text-gray-500 font-light text-sm leading-relaxed">
+                Hasil karya wanita pengrajin dari nol yang diberdayakan secara
+                berkesinambungan melalui pelatihan dan pendampingan jangka
+                panjang.
+              </p>
+            </div>
+
+            <!-- Item 2 -->
+            <div
+              class="relative pl-16 py-8 group border-b border-gray-100 reveal delay-200 min-h-[140px] flex flex-col justify-center">
+              <div
+                class="absolute left-0 top-1/2 -translate-y-1/2 w-[55px] h-[55px] rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-ru-cream group-hover:border-ru-gold transition-all duration-500 z-10 shadow-[0_5px_15px_rgba(0,0,0,0.05)] group-hover:shadow-[0_10px_25px_rgba(202,138,4,0.15)]">
+                <span
+                  class="font-serif text-xl font-bold text-gray-400 group-hover:text-ru-red transition-colors">02</span>
+              </div>
+              <h4 class="font-serif text-2xl text-gray-900 mb-2 group-hover:text-ru-red transition-colors duration-300">
+                Evolusi Kualitas & Kemewahan
+              </h4>
+              <p class="text-gray-500 font-light text-sm leading-relaxed">
+                Dari teknik tenun hingga bahan baku, setiap produk terus
+                mengalami peningkatan tanpa henti demi mencapai standar
+                kemewahan tertinggi.
+              </p>
+            </div>
+
+            <!-- Item 3 -->
+            <div
+              class="relative pl-16 py-8 group border-b border-gray-100 reveal delay-300 min-h-[140px] flex flex-col justify-center">
+              <div
+                class="absolute left-0 top-1/2 -translate-y-1/2 w-[55px] h-[55px] rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-ru-cream group-hover:border-ru-gold transition-all duration-500 z-10 shadow-[0_5px_15px_rgba(0,0,0,0.05)] group-hover:shadow-[0_10px_25px_rgba(202,138,4,0.15)]">
+                <span
+                  class="font-serif text-xl font-bold text-gray-400 group-hover:text-ru-red transition-colors">03</span>
+              </div>
+              <h4 class="font-serif text-2xl text-gray-900 mb-2 group-hover:text-ru-red transition-colors duration-300">
+                Restorasi Ulos Lawas
+              </h4>
+              <p class="text-gray-500 font-light text-sm leading-relaxed">
+                Melakukan riset mendalam, pelacakan, dan menghidupkan kembali
+                motif-motif langka dari Ulos kuno yang hampir punah.
+              </p>
+            </div>
+
+            <!-- Item 4 -->
+            <div
+              class="relative pl-16 py-8 group border-b border-gray-100 reveal delay-400 min-h-[140px] flex flex-col justify-center">
+              <div
+                class="absolute left-0 top-1/2 -translate-y-1/2 w-[55px] h-[55px] rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-ru-cream group-hover:border-ru-gold transition-all duration-500 z-10 shadow-[0_5px_15px_rgba(0,0,0,0.05)] group-hover:shadow-[0_10px_25px_rgba(202,138,4,0.15)]">
+                <span
+                  class="font-serif text-xl font-bold text-gray-400 group-hover:text-ru-red transition-colors">04</span>
+              </div>
+              <h4 class="font-serif text-2xl text-gray-900 mb-2 group-hover:text-ru-red transition-colors duration-300">
+                Palet Warna Alam Futuristik
+              </h4>
+              <p class="text-gray-500 font-light text-sm leading-relaxed">
+                Meracik pewarna alami dari ekstrak kulit kayu dan dedaunan
+                untuk menciptakan paduan warna futuristik yang ramah
+                lingkungan.
+              </p>
+            </div>
+
+            <!-- Item 5 -->
+            <div
+              class="relative pl-16 py-8 group border-b border-gray-100 reveal delay-500 min-h-[140px] flex flex-col justify-center">
+              <div
+                class="absolute left-0 top-1/2 -translate-y-1/2 w-[55px] h-[55px] rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-ru-cream group-hover:border-ru-gold transition-all duration-500 z-10 shadow-[0_5px_15px_rgba(0,0,0,0.05)] group-hover:shadow-[0_10px_25px_rgba(202,138,4,0.15)]">
+                <span
+                  class="font-serif text-xl font-bold text-gray-400 group-hover:text-ru-red transition-colors">05</span>
+              </div>
+              <h4 class="font-serif text-2xl text-gray-900 mb-2 group-hover:text-ru-red transition-colors duration-300">
+                Kolaborasi Tenun Tersulit
+              </h4>
+              <p class="text-gray-500 font-light text-sm leading-relaxed">
+                Memadukan motif lawas yang rumit dengan benang organik, benang
+                kristal, serta payet mewah dalam satu kanvas tenun mesin
+                tradisional.
+              </p>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="relative pl-16 py-8 group reveal delay-600 min-h-[140px] flex flex-col justify-center">
+              <div
+                class="absolute left-0 top-1/2 -translate-y-1/2 w-[55px] h-[55px] rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-ru-cream group-hover:border-ru-gold transition-all duration-500 z-10 shadow-[0_5px_15px_rgba(0,0,0,0.05)] group-hover:shadow-[0_10px_25px_rgba(202,138,4,0.15)]">
+                <span
+                  class="font-serif text-xl font-bold text-gray-400 group-hover:text-ru-red transition-colors">06</span>
+              </div>
+              <h4 class="font-serif text-2xl text-gray-900 mb-2 group-hover:text-ru-red transition-colors duration-300">
+                Kemewahan Tak Terduga
+              </h4>
+              <p class="text-gray-500 font-light text-sm leading-relaxed">
+                Diproduksi sangat terbatas, 100% berbeda, dan menjamin Anda
+                menjadi pusat perhatian.<br /><em class="text-ru-red/80 block mt-2">"Belum punya produk Rumah Ulos,
+                  berarti belum
+                  eksklusif."</em>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- ===================== FOOTER ===================== -->
-    <footer class="bg-ru-black text-gray-400 pt-16 pb-8">
-      <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12"
-      >
-        <div class="md:col-span-2">
-          <a
-            href="index.html"
-            class="font-serif text-2xl font-bold text-white mb-4 flex items-center gap-1"
-          >
-            <span class="text-ru-gold">Rumah</span><span> Ulos</span>
-          </a>
-          <p class="text-sm font-light leading-relaxed max-w-sm mt-3">
-            Menjaga warisan budaya Batak tetap hidup melalui kain ulos
-            berkualitas tinggi yang ditenun dengan cinta dan dedikasi.
+  <!-- ===================== PROGRESS ===================== -->
+  <section id="progress" class="py-24 relative overflow-hidden bg-ru-cream border-t border-gray-100">
+    <!-- Abstract pattern overlay -->
+    <div class="absolute inset-0 opacity-[0.03] mix-blend-multiply" style="
+          background-image: url(&quot;assets/ulos_motif_1773415959494.png&quot;);
+          background-size: 250px;
+        "></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <!-- Heading -->
+      <div class="text-center mb-16">
+        <h2 class="reveal font-serif text-4xl md:text-5xl lg:text-6xl text-gray-900 mb-4 tracking-wide uppercase">
+          Progres<span class="text-ru-red">/</span>Status
+        </h2>
+        <div class="w-24 h-px bg-ru-red/40 mx-auto mb-6"></div>
+        <h3 class="reveal delay-100 text-sm md:text-base tracking-[0.2em] uppercase text-ru-gold font-semibold">
+          Penguatan Produk Unggulan
+        </h3>
+      </div>
+
+      <!-- Grid Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
+        <!-- Column 1: Launching -->
+        <div class="reveal flex flex-col gap-6">
+          <h4
+            class="text-center uppercase tracking-widest text-ru-red text-xs md:text-sm font-bold h-12 flex items-center justify-center">
+            Launching Produk Inovasi<br />Baru
+          </h4>
+          <div class="w-full aspect-[3/4] rounded-t-full rounded-b-md overflow-hidden shadow-2xl border-4 border-white">
+            <img src="assets/launching_poster.png" alt="Launching RUMAH ULOS" class="w-full h-full object-cover" />
+          </div>
+          <p class="text-sm text-gray-600 leading-relaxed font-light mt-4 text-justify px-2">
+            Launching produk baru setiap 3 bulan dalam kapasitas tertentu.
+            Berasal dari Program Revitalisasi Ulos Lawas mix pelatihan
+            peningkatan skill penenun, menciptakan ledakan pendapatan bagi
+            Rumah Ulos pada saat peluncuran.
           </p>
-          <div class="flex gap-3 mt-5">
-            <a
-              href="#"
-              class="w-9 h-9 rounded-full border border-gray-700 flex items-center justify-center hover:border-ru-gold hover:text-ru-gold transition-all"
-            >
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  fill-rule="evenodd"
-                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </a>
-            <a
-              href="#"
-              class="w-9 h-9 rounded-full border border-gray-700 flex items-center justify-center hover:border-ru-gold hover:text-ru-gold transition-all"
-            >
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  fill-rule="evenodd"
-                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </a>
-            <a
-              href="#"
-              class="w-9 h-9 rounded-full border border-gray-700 flex items-center justify-center hover:border-ru-gold hover:text-ru-gold transition-all"
-            >
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 448 512">
-                <path
-                  d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
-                />
-              </svg>
-            </a>
+        </div>
+
+        <!-- Column 2: Gen Z & Luxury -->
+        <div class="reveal delay-100 flex flex-col gap-6">
+          <div class="grid grid-cols-2 gap-4">
+            <h4
+              class="text-center uppercase tracking-widest text-ru-red text-xs md:text-sm font-bold h-12 flex items-center justify-center">
+              Ulos For Gen Z
+            </h4>
+            <h4
+              class="text-center uppercase tracking-widest text-ru-red text-xs md:text-sm font-bold h-12 flex items-center justify-center">
+              Luxury On Ulos
+            </h4>
+          </div>
+
+          <!-- Image Collage -->
+          <div class="grid grid-cols-2 gap-4 aspect-[4/5] w-full">
+            <!-- Gen Z Images (Left side) -->
+            <div class="flex flex-col gap-4 h-full">
+              <!-- top half -->
+              <div class="h-[48%] rounded-sm overflow-hidden shadow-xl border border-white">
+                <img src="assets/product_genz.png" alt="Ulos Gen Z" class="w-full h-full object-cover" />
+              </div>
+              <!-- bottom half -->
+              <div class="h-[48%] rounded-sm overflow-hidden shadow-xl border border-white">
+                <img src="assets/56.jpeg" alt="Ulos Wedding" class="w-full h-full object-cover" />
+              </div>
+            </div>
+
+            <!-- Luxury Image (Right side) -->
+            <div class="h-full rounded-t-full rounded-b-md overflow-hidden shadow-2xl border-4 border-white">
+              <img src="assets/63.jpeg" alt="Luxury Ulos" class="w-full h-full object-cover" />
+            </div>
+          </div>
+
+          <!-- Description text -->
+          <div class="grid grid-cols-2 gap-4 mt-4 px-2">
+            <p class="text-xs text-gray-600 leading-relaxed font-light text-justify border-t border-gray-200 pt-4">
+              <strong class="font-bold text-gray-900 block mb-1">Pelopor bagi Gen Z</strong>
+              Saat ini para kaum muda akan menjadi generasi yang akan mewarisi
+              ulos, oleh karena itu kami terus berinovasi agar mereka
+              mencintai ulos dengan warna mereka
+            </p>
+            <p class="text-xs text-gray-600 leading-relaxed font-light text-justify border-t border-gray-200 pt-4">
+              <strong class="font-bold text-gray-900 block mb-1">Penyetaraan Fashion</strong>
+              Untuk penyetaraan Fashion Ulos dengan produk-produk Branded
+              costumer, Ulos berkonsep mewah saat ini sedang produksi untuk
+              waiting list para costumer
+            </p>
           </div>
         </div>
-        <div>
+
+        <!-- Column 3: Galery -->
+        <div class="reveal delay-200 flex flex-col gap-6">
           <h4
-            class="text-white font-semibold mb-4 text-sm tracking-wide uppercase"
-          >
-            Halaman
+            class="text-center uppercase tracking-widest text-ru-red text-xs md:text-sm font-bold h-12 flex items-center justify-center leading-relaxed">
+            Galery Rumah Produksi<br />Wisata Ulos
           </h4>
-          <ul class="space-y-2 text-sm font-light">
-            <li>
-              <a href="index.html" class="hover:text-ru-gold transition-colors"
-                >Beranda</a
-              >
-            </li>
-            <li>
-              <a
-                href="products.html"
-                class="hover:text-ru-gold transition-colors"
-                >Produk</a
-              >
-            </li>
-            <li>
-              <a
-                href="gallery.html"
-                class="hover:text-ru-gold transition-colors"
-                >Galeri</a
-              >
-            </li>
-            <li>
-              <a
-                href="business.html"
-                class="hover:text-ru-gold transition-colors"
-                >Bisnis</a
-              >
-            </li>
-            <li>
-              <a href="team.html" class="hover:text-ru-gold transition-colors"
-                >Tim & Kontak</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4
-            class="text-white font-semibold mb-4 text-sm tracking-wide uppercase"
-          >
-            Kontak
-          </h4>
-          <address class="not-italic text-sm font-light space-y-2">
-            <p>Jl. Jamin Ginting No. 88</p>
-            <p>Medan, Sumatera Utara</p>
-            <p class="pt-2">+62 812 3456 7890</p>
-            <p>info@rumahulos.co.id</p>
-          </address>
+          <div
+            class="w-full aspect-[3/4] rounded-t-full rounded-b-md overflow-hidden relative shadow-2xl border-4 border-white group">
+            <img src="assets/gallery_landscape.png" alt="Galery Rumah Produksi"
+              class="w-full h-full object-cover brightness-105 group-hover:scale-105 transition-transform duration-700" />
+          </div>
+          <p class="text-sm text-gray-600 leading-relaxed font-light mt-4 text-justify px-2">
+            Saat ini kami sedang mulai membangun Galery sekaligus tempat foto
+            prawedding etnik, Rumah produksi untuk menampung para penenun dan
+            penjahit lulusan SMK untuk bekerja membuat fashion dan home deor
+            Ulos.Pada bagian belakang sebagai tempat para laki-laki bekerja
+            mewarnai Benang secara alami.Kami akan menambah pekerja sekitar 15
+            orang Sebagai tempat wisata Ulos dan tempat pelatihan berbagai
+            produk dari Desa Ulos kami.
+          </p>
         </div>
       </div>
-      <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-gray-900 text-center text-xs tracking-wider"
-      >
-        © 2026 Rumah Ulos. Semua hak dilindungi.
+    </div>
+  </section>
+
+  <!-- ===================== CTA STRIP ===================== -->
+  <div class="bg-ru-red py-16 text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="reveal font-serif text-3xl md:text-4xl font-bold mb-4">
+        Siap Menjelajahi Koleksi Kami?
+      </h2>
+      <p class="reveal delay-100 text-red-100 font-light mb-8 max-w-xl mx-auto">
+        Temukan ulos unggulan, luxury, hingga inovasi untuk Gen Z — semuanya
+        tersedia.
+      </p>
+      <div class="reveal delay-200 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="products.html"
+          class="btn-primary bg-white text-ru-red hover:bg-gray-100 px-8 py-4 rounded-full font-bold transition-all shadow-lg">Lihat
+          Semua Produk →</a>
+        <a href="gallery.html"
+          class="btn-primary border border-white/50 hover:bg-white/10 text-white px-8 py-4 rounded-full font-semibold transition-all">Galeri
+          Foto</a>
       </div>
-    </footer>
+    </div>
+  </div>
 
-    <style>
-      @keyframes slowZoom {
-        from {
-          transform: scale(1.05);
-        }
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-ru-black text-gray-400 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+      <div class="md:col-span-2">
+        <a href="index.html" class="font-serif text-2xl font-bold text-white mb-4 flex items-center gap-1">
+          <span class="text-ru-gold">Rumah</span><span> Ulos</span>
+        </a>
+        <p class="text-sm font-light leading-relaxed max-w-sm mt-3">
+          Menjaga warisan budaya Batak tetap hidup melalui kain ulos
+          berkualitas tinggi yang ditenun dengan cinta dan dedikasi.
+        </p>
+        <div class="flex gap-3 mt-5">
+          <a href="https://www.facebook.com/marlinda.panggabean.7"
+            class="w-9 h-9 rounded-full border border-gray-700 flex items-center justify-center hover:border-ru-gold hover:text-ru-gold transition-all">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd"
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/rumah_ulos/"
+            class="w-9 h-9 rounded-full border border-gray-700 flex items-center justify-center hover:border-ru-gold hover:text-ru-gold transition-all">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd"
+                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@rumahulos?lang=en"
+            class="w-9 h-9 rounded-full border border-gray-700 flex items-center justify-center hover:border-ru-gold hover:text-ru-gold transition-all">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 448 512">
+              <path
+                d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4 text-sm tracking-wide uppercase">
+          Halaman
+        </h4>
+        <ul class="space-y-2 text-sm font-light">
+          <li>
+            <a href="index.html" class="hover:text-ru-gold transition-colors">Beranda</a>
+          </li>
+          <li>
+            <a href="products.html" class="hover:text-ru-gold transition-colors">Produk</a>
+          </li>
+          <li>
+            <a href="gallery.html" class="hover:text-ru-gold transition-colors">Galeri</a>
+          </li>
+          <li>
+            <a href="business.html" class="hover:text-ru-gold transition-colors">Bisnis</a>
+          </li>
+          <li>
+            <a href="team.html" class="hover:text-ru-gold transition-colors">Tim & Kontak</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4 text-sm tracking-wide uppercase">
+          Kontak
+        </h4>
+        <address class="not-italic text-sm font-light space-y-2">
+          <p>Dusun Lumban siagian julu, kecamatan siatas barita</p>
+          <p>Tapanuli Utara, Sumatera Utara</p>
+          <p class="pt-2">+62813-6235-9569</p>
+          <p>rumahulosindonesia@gmail.com</p>
+        </address>
+      </div>
+    </div>
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-gray-900 text-center text-xs tracking-wider">
+      © 2026 Rumah Ulos. Semua hak dilindungi.
+    </div>
+  </footer>
 
-        to {
-          transform: scale(1.12);
-        }
+  <style>
+    @keyframes slowZoom {
+      from {
+        transform: scale(1.05);
       }
-    </style>
-    <script src="js/main.js"></script>
-  </body>
+
+      to {
+        transform: scale(1.12);
+      }
+    }
+  </style>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

@@ -1,1999 +1,934 @@
 <!doctype html>
 <html lang="id" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galeri — Rumah Ulos</title>
-    <meta
-      name="description"
-      content="Galeri foto koleksi kain ulos Rumah Ulos — unggulan, luxury, dan proses produksi."
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              "ru-red": "#8B0000",
-              "ru-red-dark": "#6B0000",
-              "ru-gold": "#ca8a04",
-              "ru-black": "#0a0a0a",
-              "ru-white": "#fdfbf7",
-              "ru-cream": "#f9f6f0",
-            },
-            fontFamily: {
-              sans: ["Inter", "sans-serif"],
-              serif: ["Playfair Display", "serif"],
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri — Rumah Ulos</title>
+  <meta name="description"
+    content="Galeri foto koleksi kain ulos Rumah Ulos — unggulan, luxury, dan proses produksi." />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "ru-red": "#8B0000",
+            "ru-red-dark": "#6B0000",
+            "ru-gold": "#ca8a04",
+            "ru-black": "#0a0a0a",
+            "ru-white": "#fdfbf7",
+            "ru-cream": "#f9f6f0",
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            serif: ["Playfair Display", "serif"],
           },
         },
-      };
-    </script>
-  </head>
+      },
+    };
+  </script>
+</head>
 
-  <body class="antialiased">
-    <!-- NAVBAR -->
-    <nav
-      id="navbar"
-      class="fixed w-full z-50 py-3 text-white bg-ru-black/90 backdrop-blur-md border-b border-white/5"
-    >
-      <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center"
-      >
-        <a href="index.html" class="flex items-center"
-          ><img
-            src="assets/logo.png"
-            alt="Rumah Ulos"
-            class="h-10 w-auto object-contain logo-gold"
-        /></a>
-        <div
-          class="hidden md:flex items-center space-x-7 text-sm font-medium tracking-wide"
-        >
-          <a href="index.html" class="hover:text-ru-gold transition-colors"
-            >Beranda</a
-          >
-          <a href="products.html" class="hover:text-ru-gold transition-colors"
-            >Produk</a
-          >
-          <a href="gallery.html" class="text-ru-gold font-semibold">Galeri</a>
-          <a href="business.html" class="hover:text-ru-gold transition-colors"
-            >Bisnis</a
-          >
-          <a href="team.html" class="hover:text-ru-gold transition-colors"
-            >Tim</a
-          >
-        </div>
-        <a
-          href="https://wa.me/6281234567890"
-          target="_blank"
-          class="hidden md:inline-flex items-center gap-2 bg-ru-red hover:bg-ru-red-dark text-white px-5 py-2.5 rounded-full text-sm font-semibold btn-primary"
-          >Hubungi Kami</a
-        >
-        <button id="mobile-menu-btn" class="md:hidden text-white p-1">
-          <svg
-            class="icon-open w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-          <svg
-            class="icon-close hidden w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
-      </div>
-      <div
-        id="mobile-menu"
-        class="md:hidden absolute top-full left-0 w-full bg-ru-black border-b border-white/10"
-      >
-        <div class="flex flex-col space-y-1 px-6 py-4 text-sm font-medium">
-          <a href="index.html" class="py-2 hover:text-ru-gold">Beranda</a>
-          <a href="products.html" class="py-2 hover:text-ru-gold">Produk</a>
-          <a href="gallery.html" class="py-2 text-ru-gold font-semibold"
-            >Galeri</a
-          >
-          <a href="business.html" class="py-2 hover:text-ru-gold">Bisnis</a>
-          <a href="team.html" class="py-2 hover:text-ru-gold">Tim</a>
-          <a
-            href="https://wa.me/6281234567890"
-            target="_blank"
-            class="mt-2 text-center bg-ru-red text-white py-2.5 rounded-full font-semibold"
-            >Hubungi Kami</a
-          >
-        </div>
-      </div>
-    </nav>
+<body class="antialiased">
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed w-full z-50 transition-all duration-500" style="padding: 0.75rem 0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/logo.png" alt="Rumah Ulos" class="h-10 w-auto object-contain logo-gold drop-shadow-md" />
+      </a>
 
-    <!-- PAGE HERO -->
-    <div
-      class="pt-28 pb-16 bg-ru-white text-ru-black relative overflow-hidden border-b border-gray-100"
-    >
-      <div
-        class="absolute inset-0 opacity-[0.03] mix-blend-multiply"
-        style="
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center space-x-7 text-sm font-medium tracking-wide">
+        <a href="index.html" data-nav class="hover:text-ru-gold transition-colors duration-200">Beranda</a>
+        <a href="products.html" data-nav class="hover:text-ru-gold transition-colors duration-200">Produk</a>
+        <a href="gallery.html" data-nav class="hover:text-ru-gold transition-colors duration-200">Galeri</a>
+        <a href="business.html" data-nav class="hover:text-ru-gold transition-colors duration-200">Bisnis</a>
+        <a href="team.html" data-nav class="hover:text-ru-gold transition-colors duration-200">Tim</a>
+      </div>
+
+      <!-- CTA -->
+      <a href="https://wa.me/6281362359569" target="_blank"
+        class="hidden md:inline-flex items-center gap-2 bg-ru-red hover:bg-ru-red-dark text-white px-5 py-2.5 rounded-full text-sm font-semibold btn-primary transition-all">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+        </svg>
+        Hubungi Kami
+      </a>
+
+      <!-- Hamburger -->
+      <button id="mobile-menu-btn" class="md:hidden text-white p-1" aria-label="Menu">
+        <svg class="icon-open w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg class="icon-close hidden w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-ru-black border-b border-white/10">
+      <div class="flex flex-col space-y-1 px-6 py-4 text-sm font-medium">
+        <a href="index.html" data-nav class="py-2 hover:text-ru-gold transition-colors">Beranda</a>
+        <a href="products.html" data-nav class="py-2 hover:text-ru-gold transition-colors">Produk</a>
+        <a href="gallery.html" data-nav class="py-2 hover:text-ru-gold transition-colors">Galeri</a>
+        <a href="business.html" data-nav class="py-2 hover:text-ru-gold transition-colors">Bisnis</a>
+        <a href="team.html" data-nav class="py-2 hover:text-ru-gold transition-colors">Tim</a>
+        <a href="https://wa.me/6281234567890" target="_blank"
+          class="mt-2 text-center bg-ru-red text-white py-2.5 rounded-full font-semibold">Hubungi Kami</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="pt-28 pb-16 bg-ru-white text-ru-black relative overflow-hidden border-b border-gray-100">
+    <div class="absolute inset-0 opacity-[0.03] mix-blend-multiply" style="
           background-image: url(&quot;assets/ulos_motif_1773415959494.png&quot;);
           background-size: 200px;
-        "
-      ></div>
-      <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-        <span
-          class="section-badge text-ru-red border-ru-red/30 bg-ru-red/5 reveal"
-          >Visual Story</span
-        >
-        <h1
-          class="reveal delay-100 section-title text-4xl md:text-6xl text-gray-900 mt-2 mb-4"
-        >
-          Galeri <span class="italic text-ru-red">Rumah Ulos</span>
-        </h1>
-        <div
-          class="ulos-divider !bg-ru-red/30 reveal delay-200 mb-5 relative before:bg-ru-red after:bg-ru-red"
-        ></div>
-        <p class="reveal delay-300 text-gray-500 font-light max-w-xl mx-auto">
-          Setiap foto menceritakan keindahan, proses, dan makna di balik setiap
-          helai kain ulos kami.
+        "></div>
+    <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+      <span class="section-badge text-ru-red border-ru-red/30 bg-ru-red/5 reveal">Visual Story</span>
+      <h1 class="reveal delay-100 section-title text-4xl md:text-6xl text-gray-900 mt-2 mb-4">
+        Galeri <span class="italic text-ru-red">Rumah Ulos</span>
+      </h1>
+      <div class="ulos-divider !bg-ru-red/30 reveal delay-200 mb-5 relative before:bg-ru-red after:bg-ru-red"></div>
+      <p class="reveal delay-300 text-gray-500 font-light max-w-xl mx-auto">
+        Setiap foto menceritakan keindahan, proses, dan makna di balik setiap
+        helai kain ulos kami.
+      </p>
+    </div>
+  </div>
+
+  <!-- FILTER TABS -->
+  <div class="bg-white border-b border-gray-100 sticky top-16 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex gap-1 overflow-x-auto py-3 scrollbar-hide">
+        <button
+          class="filter-btn active px-5 py-2 text-sm font-semibold rounded-full border border-gray-200 hover:border-ru-red whitespace-nowrap transition-all"
+          data-filter="all">
+          Semua
+        </button>
+        <button
+          class="filter-btn px-5 py-2 text-sm font-semibold rounded-full border border-gray-200 hover:border-ru-red whitespace-nowrap transition-all text-gray-500"
+          data-filter="unggulan">
+          Unggulan
+        </button>
+        <button
+          class="filter-btn px-5 py-2 text-sm font-semibold rounded-full border border-gray-200 hover:border-ru-red whitespace-nowrap transition-all text-gray-500"
+          data-filter="luxury">
+          Luxury
+        </button>
+        <button
+          class="filter-btn px-5 py-2 text-sm font-semibold rounded-full border border-gray-200 hover:border-ru-red whitespace-nowrap transition-all text-gray-500"
+          data-filter="genz">
+          Gen Z
+        </button>
+        <button
+          class="filter-btn px-5 py-2 text-sm font-semibold rounded-full border border-gray-200 hover:border-ru-red whitespace-nowrap transition-all text-gray-500"
+          data-filter="proses">
+          Proses Produksi
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALLERY GRID -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Simple Grid 60 Items -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/2.jpeg" data-caption="Koleksi Ulos 1">
+          <img src="assets/1.jpeg" alt="Koleksi Ulos 1"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/3.jpeg" data-caption="Koleksi Ulos 2">
+          <img src="assets/2.jpeg" alt="Koleksi Ulos 2"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/4.jpeg" data-caption="Koleksi Ulos 3">
+          <img src="assets/3.jpeg" alt="Koleksi Ulos 3"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/5.jpeg" data-caption="Koleksi Ulos 4">
+          <img src="assets/4.jpeg" alt="Koleksi Ulos 4"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/13.jpeg" data-caption="Koleksi Ulos 5">
+          <img src="assets/5.jpeg" alt="Koleksi Ulos 5"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/18.jpeg" data-caption="Koleksi Ulos 6">
+          <img src="assets/6.jpeg" alt="Koleksi Ulos 6"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/42.jpeg" data-caption="Koleksi Ulos 7">
+          <img src="assets/7.jpeg" alt="Koleksi Ulos 7"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/46.jpeg" data-caption="Koleksi Ulos 8">
+          <img src="assets/8.jpeg" alt="Koleksi Ulos 8"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/47.jpeg" data-caption="Koleksi Ulos 9">
+          <img src="assets/9.jpeg" alt="Koleksi Ulos 9"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/10.jpeg" data-caption="Koleksi Ulos 10">
+          <img src="assets/10.jpeg" alt="Koleksi Ulos 10"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/11.jpeg" data-caption="Koleksi Ulos 11">
+          <img src="assets/11.jpeg" alt="Koleksi Ulos 11"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/12.jpeg" data-caption="Koleksi Ulos 12">
+          <img src="assets/12.jpeg" alt="Koleksi Ulos 12"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/13.jpeg" data-caption="Koleksi Ulos 13">
+          <img src="assets/13.jpeg" alt="Koleksi Ulos 13"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/14.jpeg" data-caption="Koleksi Ulos 14">
+          <img src="assets/14.jpeg" alt="Koleksi Ulos 14"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/15.jpeg" data-caption="Koleksi Ulos 15">
+          <img src="assets/15.png" alt="Koleksi Ulos 15"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/16.jpeg" data-caption="Koleksi Ulos 16">
+          <img src="assets/16.png" alt="Koleksi Ulos 16"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/17.jpeg" data-caption="Koleksi Ulos 17">
+          <img src="assets/17.jpeg" alt="Koleksi Ulos 17"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/18.jpeg" data-caption="Koleksi Ulos 18">
+          <img src="assets/18.jpeg" alt="Koleksi Ulos 18"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/19.jpeg" data-caption="Koleksi Ulos 19">
+          <img src="assets/19.png" alt="Koleksi Ulos 19"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/20.jpeg" data-caption="Koleksi Ulos 20">
+          <img src="assets/20.jpeg" alt="Koleksi Ulos 20"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/21.jpeg" data-caption="Koleksi Ulos 21">
+          <img src="assets/21.jpeg" alt="Koleksi Ulos 21"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/22.jpeg" data-caption="Koleksi Ulos 22">
+          <img src="assets/22.jpeg" alt="Koleksi Ulos 22"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/23.jpeg" data-caption="Koleksi Ulos 23">
+          <img src="assets/23.jpeg" alt="Koleksi Ulos 23"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/24.jpeg" data-caption="Koleksi Ulos 24">
+          <img src="assets/24.jpeg" alt="Koleksi Ulos 24"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/25.jpeg" data-caption="Koleksi Ulos 25">
+          <img src="assets/25.jpeg" alt="Koleksi Ulos 25"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/26.jpeg" data-caption="Koleksi Ulos 26">
+          <img src="assets/26.jpeg" alt="Koleksi Ulos 26"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/27.jpeg" data-caption="Koleksi Ulos 27">
+          <img src="assets/27.jpeg" alt="Koleksi Ulos 27"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/28.jpeg" data-caption="Koleksi Ulos 28">
+          <img src="assets/28.jpeg" alt="Koleksi Ulos 28"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/29.jpeg" data-caption="Koleksi Ulos 29">
+          <img src="assets/29.jpeg" alt="Koleksi Ulos 29"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/30.jpeg" data-caption="Koleksi Ulos 30">
+          <img src="assets/30.jpeg" alt="Koleksi Ulos 30"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/31.jpeg" data-caption="Koleksi Ulos 31">
+          <img src="assets/31.jpeg" alt="Koleksi Ulos 31"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/32.jpeg" data-caption="Koleksi Ulos 32">
+          <img src="assets/32.jpeg" alt="Koleksi Ulos 32"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/33.jpeg" data-caption="Koleksi Ulos 33">
+          <img src="assets/33.jpeg" alt="Koleksi Ulos 33"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/34.jpeg" data-caption="Koleksi Ulos 34">
+          <img src="assets/34.jpeg" alt="Koleksi Ulos 34"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/40.jpeg" data-caption="Koleksi Ulos 35">
+          <img src="assets/40.jpeg" alt="Koleksi Ulos 35"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/41.jpeg" data-caption="Koleksi Ulos 36">
+          <img src="assets/41.jpeg" alt="Koleksi Ulos 36"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/42.jpeg" data-caption="Koleksi Ulos 37">
+          <img src="assets/42.jpeg" alt="Koleksi Ulos 37"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/43.jpeg" data-caption="Koleksi Ulos 38">
+          <img src="assets/43.jpeg" alt="Koleksi Ulos 38"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/44.jpeg" data-caption="Koleksi Ulos 39">
+          <img src="assets/44.jpeg" alt="Koleksi Ulos 39"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/45.jpeg" data-caption="Koleksi Ulos 40">
+          <img src="assets/45.jpeg" alt="Koleksi Ulos 40"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/46.jpeg" data-caption="Koleksi Ulos 41">
+          <img src="assets/46.jpeg" alt="Koleksi Ulos 41"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/47.jpeg" data-caption="Koleksi Ulos 42">
+          <img src="assets/47.jpeg" alt="Koleksi Ulos 42"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/48.jpeg" data-caption="Koleksi Ulos 43">
+          <img src="assets/48.jpeg" alt="Koleksi Ulos 43"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/49.jpeg" data-caption="Koleksi Ulos 44">
+          <img src="assets/49.jpeg" alt="Koleksi Ulos 44"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/50.jpeg" data-caption="Koleksi Ulos 45">
+          <img src="assets/50.jpeg" alt="Koleksi Ulos 45"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/51.jpg" data-caption="Koleksi Ulos 46">
+          <img src="assets/51.jpg " alt="Koleksi Ulos 46"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/52.jpeg" data-caption="Koleksi Ulos 47">
+          <img src="assets/52.jpeg" alt="Koleksi Ulos 47"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/53.jpeg" data-caption="Koleksi Ulos 48">
+          <img src="assets/53.jpeg" alt="Koleksi Ulos 48"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/54.jpeg" data-caption="Koleksi Ulos 49">
+          <img src="assets/54.jpeg" alt="Koleksi Ulos 49"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/55.jpeg" data-caption="Koleksi Ulos 50">
+          <img src="assets/55.jpeg" alt="Koleksi Ulos 50"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/56.jpeg" data-caption="Koleksi Ulos 51">
+          <img src="assets/56.jpeg" alt="Koleksi Ulos 51"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/57.jpeg" data-caption="Koleksi Ulos 52">
+          <img src="assets/57.jpeg" alt="Koleksi Ulos 52"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/58.jpeg" data-caption="Koleksi Ulos 53">
+          <img src="assets/58.jpeg" alt="Koleksi Ulos 53"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/59.jpeg" data-caption="Koleksi Ulos 54">
+          <img src="assets/59.jpeg" alt="Koleksi Ulos 54"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/60.jpeg" data-caption="Koleksi Ulos 55">
+          <img src="assets/60.jpeg" alt="Koleksi Ulos 55"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/61.jpeg" data-caption="Koleksi Ulos 56">
+          <img src="assets/61.jpeg" alt="Koleksi Ulos 56"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/62.jpeg" data-caption="Koleksi Ulos 57">
+          <img src="assets/62.jpeg" alt="Koleksi Ulos 57"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/63.jpeg" data-caption="Koleksi Ulos 58">
+          <img src="assets/63.jpeg" alt="Koleksi Ulos 58"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/64.jpeg" data-caption="Koleksi Ulos 59">
+          <img src="assets/64.jpeg" alt="Koleksi Ulos 59"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
+          data-category="all" data-lightbox="assets/hande1.png" data-caption="Koleksi Ulos 60">
+          <img src="assets/hande1.png" alt="Koleksi Ulos 60"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <div class="overlay">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="bg-gray-50 border-t border-gray-100 py-16 text-center">
+    <div class="max-w-2xl mx-auto px-4">
+      <h2 class="font-serif text-3xl font-bold text-ru-black mb-4 reveal">
+        Ingin Melihat Lebih Banyak?
+      </h2>
+      <p class="text-gray-500 font-light mb-8 reveal delay-100">
+        Ikuti kami di Instagram &amp; TikTok untuk update koleksi terbaru dan
+        behind the scenes proses produksi.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center reveal delay-200">
+        <a href="products.html"
+          class="btn-primary bg-ru-red text-white hover:bg-ru-red-dark px-8 py-3.5 rounded-full font-bold transition-all">Lihat
+          Semua Produk</a>
+        <a href="https://wa.me/6281234567890" target="_blank"
+          class="border border-ru-black text-ru-black hover:bg-ru-black hover:text-white px-8 py-3.5 rounded-full font-semibold transition-all">Tanya
+          via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox"
+    class="hidden fixed inset-0 z-[100] bg-white/95 backdrop-blur-md flex items-center justify-center px-4">
+    <button id="lightbox-close" class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 transition-colors">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+    <button id="lightbox-prev" class="absolute left-4 md:left-8 text-gray-400 hover:text-gray-900 transition-colors">
+      <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <div class="max-w-4xl w-full text-center">
+      <img id="lightbox-img" src="" alt=""
+        class="max-h-[80vh] w-auto mx-auto object-contain rounded-sm shadow-xl border border-gray-200" />
+      <p id="lightbox-caption" class="text-gray-600 text-sm mt-4 font-normal"></p>
+    </div>
+    <button id="lightbox-next" class="absolute right-4 md:right-8 text-gray-400 hover:text-gray-900 transition-colors">
+      <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-ru-black text-gray-400 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+      <div class="md:col-span-2">
+        <a href="index.html" class="font-serif text-2xl font-bold text-white mb-4 flex items-center gap-1">
+          <span class="text-ru-gold">Rumah</span><span> Ulos</span>
+        </a>
+        <p class="text-sm font-light leading-relaxed max-w-sm mt-3">
+          Menjaga warisan budaya Batak tetap hidup melalui kain ulos
+          berkualitas tinggi yang ditenun dengan cinta dan dedikasi.
         </p>
-      </div>
-    </div>
-
-    <!-- FILTER TABS -->
-    <div class="bg-white border-b border-gray-100 sticky top-16 z-40">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex gap-1 overflow-x-auto py-3 scrollbar-hide">
-          <button
-            class="filter-btn active px-5 py-2 text-sm font-semibold rounded-full border border-gray-200 hover:border-ru-red whitespace-nowrap transition-all"
-            data-filter="all"
-          >
-            Semua
-          </button>
-          <button
-            class="filter-btn px-5 py-2 text-sm font-semibold rounded-full border border-gray-200 hover:border-ru-red whitespace-nowrap transition-all text-gray-500"
-            data-filter="unggulan"
-          >
-            Unggulan
-          </button>
-          <button
-            class="filter-btn px-5 py-2 text-sm font-semibold rounded-full border border-gray-200 hover:border-ru-red whitespace-nowrap transition-all text-gray-500"
-            data-filter="luxury"
-          >
-            Luxury
-          </button>
-          <button
-            class="filter-btn px-5 py-2 text-sm font-semibold rounded-full border border-gray-200 hover:border-ru-red whitespace-nowrap transition-all text-gray-500"
-            data-filter="genz"
-          >
-            Gen Z
-          </button>
-          <button
-            class="filter-btn px-5 py-2 text-sm font-semibold rounded-full border border-gray-200 hover:border-ru-red whitespace-nowrap transition-all text-gray-500"
-            data-filter="proses"
-          >
-            Proses Produksi
-          </button>
+        <div class="flex gap-3 mt-5">
+          <a href="https://www.facebook.com/marlinda.panggabean.7"
+            class="w-9 h-9 rounded-full border border-gray-700 flex items-center justify-center hover:border-ru-gold hover:text-ru-gold transition-all">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd"
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/rumah_ulos/"
+            class="w-9 h-9 rounded-full border border-gray-700 flex items-center justify-center hover:border-ru-gold hover:text-ru-gold transition-all">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd"
+                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@rumahulos?lang=en"
+            class="w-9 h-9 rounded-full border border-gray-700 flex items-center justify-center hover:border-ru-gold hover:text-ru-gold transition-all">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 448 512">
+              <path
+                d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+            </svg>
+          </a>
         </div>
       </div>
-    </div>
-
-    <!-- GALLERY GRID -->
-    <section class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Simple Grid 60 Items -->
-        <div
-          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
-        >
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/2.jpeg"
-            data-caption="Koleksi Ulos 1"
-          >
-            <img
-              src="assets/1.jpeg"
-              alt="Koleksi Ulos 1"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/3.jpeg"
-            data-caption="Koleksi Ulos 2"
-          >
-            <img
-              src="assets/2.jpeg"
-              alt="Koleksi Ulos 2"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/4.jpeg"
-            data-caption="Koleksi Ulos 3"
-          >
-            <img
-              src="assets/3.jpeg"
-              alt="Koleksi Ulos 3"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/5.jpeg"
-            data-caption="Koleksi Ulos 4"
-          >
-            <img
-              src="assets/4.jpeg"
-              alt="Koleksi Ulos 4"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/13.jpeg"
-            data-caption="Koleksi Ulos 5"
-          >
-            <img
-              src="assets/5.jpeg"
-              alt="Koleksi Ulos 5"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/18.jpeg"
-            data-caption="Koleksi Ulos 6"
-          >
-            <img
-              src="assets/6.jpeg"
-              alt="Koleksi Ulos 6"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/42.jpeg"
-            data-caption="Koleksi Ulos 7"
-          >
-            <img
-              src="assets/7.jpeg"
-              alt="Koleksi Ulos 7"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/46.jpeg"
-            data-caption="Koleksi Ulos 8"
-          >
-            <img
-              src="assets/8.jpeg"
-              alt="Koleksi Ulos 8"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/47.jpeg"
-            data-caption="Koleksi Ulos 9"
-          >
-            <img
-              src="assets/9.jpeg"
-              alt="Koleksi Ulos 9"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/10.jpeg"
-            data-caption="Koleksi Ulos 10"
-          >
-            <img
-              src="assets/10.jpeg"
-              alt="Koleksi Ulos 10"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/11.jpeg"
-            data-caption="Koleksi Ulos 11"
-          >
-            <img
-              src="assets/11.jpeg"
-              alt="Koleksi Ulos 11"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/12.jpeg"
-            data-caption="Koleksi Ulos 12"
-          >
-            <img
-              src="assets/12.jpeg"
-              alt="Koleksi Ulos 12"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/13.jpeg"
-            data-caption="Koleksi Ulos 13"
-          >
-            <img
-              src="assets/13.jpeg"
-              alt="Koleksi Ulos 13"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/14.jpeg"
-            data-caption="Koleksi Ulos 14"
-          >
-            <img
-              src="assets/14.jpeg"
-              alt="Koleksi Ulos 14"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/15.jpeg"
-            data-caption="Koleksi Ulos 15"
-          >
-            <img
-              src="assets/15.png"
-              alt="Koleksi Ulos 15"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/16.jpeg"
-            data-caption="Koleksi Ulos 16"
-          >
-            <img
-              src="assets/16.png"
-              alt="Koleksi Ulos 16"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/17.jpeg"
-            data-caption="Koleksi Ulos 17"
-          >
-            <img
-              src="assets/17.jpeg"
-              alt="Koleksi Ulos 17"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/18.jpeg"
-            data-caption="Koleksi Ulos 18"
-          >
-            <img
-              src="assets/18.jpeg"
-              alt="Koleksi Ulos 18"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/19.jpeg"
-            data-caption="Koleksi Ulos 19"
-          >
-            <img
-              src="assets/19.png"
-              alt="Koleksi Ulos 19"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/20.jpeg"
-            data-caption="Koleksi Ulos 20"
-          >
-            <img
-              src="assets/20.jpeg"
-              alt="Koleksi Ulos 20"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/21.jpeg"
-            data-caption="Koleksi Ulos 21"
-          >
-            <img
-              src="assets/21.jpeg"
-              alt="Koleksi Ulos 21"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/22.jpeg"
-            data-caption="Koleksi Ulos 22"
-          >
-            <img
-              src="assets/22.jpeg"
-              alt="Koleksi Ulos 22"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/23.jpeg"
-            data-caption="Koleksi Ulos 23"
-          >
-            <img
-              src="assets/23.jpeg"
-              alt="Koleksi Ulos 23"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/24.jpeg"
-            data-caption="Koleksi Ulos 24"
-          >
-            <img
-              src="assets/24.jpeg"
-              alt="Koleksi Ulos 24"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/25.jpeg"
-            data-caption="Koleksi Ulos 25"
-          >
-            <img
-              src="assets/25.jpeg"
-              alt="Koleksi Ulos 25"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/26.jpeg"
-            data-caption="Koleksi Ulos 26"
-          >
-            <img
-              src="assets/26.jpeg"
-              alt="Koleksi Ulos 26"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/27.jpeg"
-            data-caption="Koleksi Ulos 27"
-          >
-            <img
-              src="assets/27.jpeg"
-              alt="Koleksi Ulos 27"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/28.jpeg"
-            data-caption="Koleksi Ulos 28"
-          >
-            <img
-              src="assets/28.jpeg"
-              alt="Koleksi Ulos 28"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/29.jpeg"
-            data-caption="Koleksi Ulos 29"
-          >
-            <img
-              src="assets/29.jpeg"
-              alt="Koleksi Ulos 29"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/30.jpeg"
-            data-caption="Koleksi Ulos 30"
-          >
-            <img
-              src="assets/30.jpeg"
-              alt="Koleksi Ulos 30"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/31.jpeg"
-            data-caption="Koleksi Ulos 31"
-          >
-            <img
-              src="assets/31.jpeg"
-              alt="Koleksi Ulos 31"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/32.jpeg"
-            data-caption="Koleksi Ulos 32"
-          >
-            <img
-              src="assets/32.jpeg"
-              alt="Koleksi Ulos 32"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/33.jpeg"
-            data-caption="Koleksi Ulos 33"
-          >
-            <img
-              src="assets/33.jpeg"
-              alt="Koleksi Ulos 33"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/34.jpeg"
-            data-caption="Koleksi Ulos 34"
-          >
-            <img
-              src="assets/34.jpeg"
-              alt="Koleksi Ulos 34"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/40.jpeg"
-            data-caption="Koleksi Ulos 35"
-          >
-            <img
-              src="assets/40.jpeg"
-              alt="Koleksi Ulos 35"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/41.jpeg"
-            data-caption="Koleksi Ulos 36"
-          >
-            <img
-              src="assets/41.jpeg"
-              alt="Koleksi Ulos 36"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/42.jpeg"
-            data-caption="Koleksi Ulos 37"
-          >
-            <img
-              src="assets/42.jpeg"
-              alt="Koleksi Ulos 37"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/43.jpeg"
-            data-caption="Koleksi Ulos 38"
-          >
-            <img
-              src="assets/43.jpeg"
-              alt="Koleksi Ulos 38"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/44.jpeg"
-            data-caption="Koleksi Ulos 39"
-          >
-            <img
-              src="assets/44.jpeg"
-              alt="Koleksi Ulos 39"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/45.jpeg"
-            data-caption="Koleksi Ulos 40"
-          >
-            <img
-              src="assets/45.jpeg"
-              alt="Koleksi Ulos 40"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/46.jpeg"
-            data-caption="Koleksi Ulos 41"
-          >
-            <img
-              src="assets/46.jpeg"
-              alt="Koleksi Ulos 41"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/47.jpeg"
-            data-caption="Koleksi Ulos 42"
-          >
-            <img
-              src="assets/47.jpeg"
-              alt="Koleksi Ulos 42"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/48.jpeg"
-            data-caption="Koleksi Ulos 43"
-          >
-            <img
-              src="assets/48.jpeg"
-              alt="Koleksi Ulos 43"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/49.jpeg"
-            data-caption="Koleksi Ulos 44"
-          >
-            <img
-              src="assets/49.jpeg"
-              alt="Koleksi Ulos 44"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/50.jpeg"
-            data-caption="Koleksi Ulos 45"
-          >
-            <img
-              src="assets/50.jpeg"
-              alt="Koleksi Ulos 45"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/51.jpg"
-            data-caption="Koleksi Ulos 46"
-          >
-            <img
-              src="assets/51.jpg "
-              alt="Koleksi Ulos 46"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/52.jpeg"
-            data-caption="Koleksi Ulos 47"
-          >
-            <img
-              src="assets/52.jpeg"
-              alt="Koleksi Ulos 47"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/53.jpeg"
-            data-caption="Koleksi Ulos 48"
-          >
-            <img
-              src="assets/53.jpeg"
-              alt="Koleksi Ulos 48"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/54.jpeg"
-            data-caption="Koleksi Ulos 49"
-          >
-            <img
-              src="assets/54.jpeg"
-              alt="Koleksi Ulos 49"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/55.jpeg"
-            data-caption="Koleksi Ulos 50"
-          >
-            <img
-              src="assets/55.jpeg"
-              alt="Koleksi Ulos 50"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/56.jpeg"
-            data-caption="Koleksi Ulos 51"
-          >
-            <img
-              src="assets/56.jpeg"
-              alt="Koleksi Ulos 51"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/57.jpeg"
-            data-caption="Koleksi Ulos 52"
-          >
-            <img
-              src="assets/57.jpeg"
-              alt="Koleksi Ulos 52"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/58.jpeg"
-            data-caption="Koleksi Ulos 53"
-          >
-            <img
-              src="assets/58.jpeg"
-              alt="Koleksi Ulos 53"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/59.jpeg"
-            data-caption="Koleksi Ulos 54"
-          >
-            <img
-              src="assets/59.jpeg"
-              alt="Koleksi Ulos 54"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/60.jpeg"
-            data-caption="Koleksi Ulos 55"
-          >
-            <img
-              src="assets/60.jpeg"
-              alt="Koleksi Ulos 55"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/61.jpeg"
-            data-caption="Koleksi Ulos 56"
-          >
-            <img
-              src="assets/61.jpeg"
-              alt="Koleksi Ulos 56"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/62.jpeg"
-            data-caption="Koleksi Ulos 57"
-          >
-            <img
-              src="assets/62.jpeg"
-              alt="Koleksi Ulos 57"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/63.jpeg"
-            data-caption="Koleksi Ulos 58"
-          >
-            <img
-              src="assets/63.jpeg"
-              alt="Koleksi Ulos 58"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/64.jpeg"
-            data-caption="Koleksi Ulos 59"
-          >
-            <img
-              src="assets/64.jpeg"
-              alt="Koleksi Ulos 59"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="gallery-item h-64 rounded-sm overflow-hidden reveal shadow-sm border border-gray-100 relative group"
-            data-category="all"
-            data-lightbox="assets/hande1.png"
-            data-caption="Koleksi Ulos 60"
-          >
-            <img
-              src="assets/hande1.png"
-              alt="Koleksi Ulos 60"
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
-            />
-            <div class="overlay">
-              <svg
-                class="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4 text-sm tracking-wide uppercase">
+          Halaman
+        </h4>
+        <ul class="space-y-2 text-sm font-light">
+          <li>
+            <a href="index.html" class="hover:text-ru-gold transition-colors">Beranda</a>
+          </li>
+          <li>
+            <a href="products.html" class="hover:text-ru-gold transition-colors">Produk</a>
+          </li>
+          <li>
+            <a href="gallery.html" class="hover:text-ru-gold transition-colors">Galeri</a>
+          </li>
+          <li>
+            <a href="business.html" class="hover:text-ru-gold transition-colors">Bisnis</a>
+          </li>
+          <li>
+            <a href="team.html" class="hover:text-ru-gold transition-colors">Tim & Kontak</a>
+          </li>
+        </ul>
       </div>
-    </section>
-
-    <!-- CTA -->
-    <div class="bg-gray-50 border-t border-gray-100 py-16 text-center">
-      <div class="max-w-2xl mx-auto px-4">
-        <h2 class="font-serif text-3xl font-bold text-ru-black mb-4 reveal">
-          Ingin Melihat Lebih Banyak?
-        </h2>
-        <p class="text-gray-500 font-light mb-8 reveal delay-100">
-          Ikuti kami di Instagram &amp; TikTok untuk update koleksi terbaru dan
-          behind the scenes proses produksi.
-        </p>
-        <div
-          class="flex flex-col sm:flex-row gap-4 justify-center reveal delay-200"
-        >
-          <a
-            href="products.html"
-            class="btn-primary bg-ru-red text-white hover:bg-ru-red-dark px-8 py-3.5 rounded-full font-bold transition-all"
-            >Lihat Semua Produk</a
-          >
-          <a
-            href="https://wa.me/6281234567890"
-            target="_blank"
-            class="border border-ru-black text-ru-black hover:bg-ru-black hover:text-white px-8 py-3.5 rounded-full font-semibold transition-all"
-            >Tanya via WhatsApp</a
-          >
-        </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4 text-sm tracking-wide uppercase">
+          Kontak
+        </h4>
+        <address class="not-italic text-sm font-light space-y-2">
+          <p>Dusun Lumban siagian julu, kecamatan siatas barita</p>
+          <p>Tapanuli Utara, Sumatera Utara</p>
+          <p class="pt-2">+62813-6235-9569</p>
+          <p>rumahulosindonesia@gmail.com</p>
+        </address>
       </div>
     </div>
-
-    <!-- LIGHTBOX -->
     <div
-      id="lightbox"
-      class="hidden fixed inset-0 z-[100] bg-white/95 backdrop-blur-md flex items-center justify-center px-4"
-    >
-      <button
-        id="lightbox-close"
-        class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 transition-colors"
-      >
-        <svg
-          class="w-8 h-8"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M6 18L18 6M6 6l12 12"
-          />
-        </svg>
-      </button>
-      <button
-        id="lightbox-prev"
-        class="absolute left-4 md:left-8 text-gray-400 hover:text-gray-900 transition-colors"
-      >
-        <svg
-          class="w-10 h-10"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M15 19l-7-7 7-7"
-          />
-        </svg>
-      </button>
-      <div class="max-w-4xl w-full text-center">
-        <img
-          id="lightbox-img"
-          src=""
-          alt=""
-          class="max-h-[80vh] w-auto mx-auto object-contain rounded-sm shadow-xl border border-gray-200"
-        />
-        <p
-          id="lightbox-caption"
-          class="text-gray-600 text-sm mt-4 font-normal"
-        ></p>
-      </div>
-      <button
-        id="lightbox-next"
-        class="absolute right-4 md:right-8 text-gray-400 hover:text-gray-900 transition-colors"
-      >
-        <svg
-          class="w-10 h-10"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M9 5l7 7-7 7"
-          />
-        </svg>
-      </button>
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-gray-900 text-center text-xs tracking-wider">
+      © 2026 Rumah Ulos. Semua hak dilindungi.
     </div>
+  </footer>
 
-    <!-- FOOTER -->
-    <footer class="bg-ru-black text-gray-400 pt-16 pb-8">
-      <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12"
-      >
-        <div class="md:col-span-2">
-          <a
-            href="index.html"
-            class="font-serif text-2xl font-bold text-white mb-4 flex items-center gap-1"
-            ><span class="text-ru-gold">Rumah</span><span> Ulos</span></a
-          >
-          <p class="text-sm font-light leading-relaxed max-w-sm mt-3">
-            Menjaga warisan budaya Batak tetap hidup melalui kain ulos
-            berkualitas tinggi.
-          </p>
-        </div>
-        <div>
-          <h4 class="text-white font-semibold mb-4 text-sm uppercase">
-            Halaman
-          </h4>
-          <ul class="space-y-2 text-sm font-light">
-            <li>
-              <a href="index.html" class="hover:text-ru-gold transition-colors"
-                >Beranda</a
-              >
-            </li>
-            <li>
-              <a
-                href="products.html"
-                class="hover:text-ru-gold transition-colors"
-                >Produk</a
-              >
-            </li>
-            <li>
-              <a
-                href="gallery.html"
-                class="hover:text-ru-gold transition-colors"
-                >Galeri</a
-              >
-            </li>
-            <li>
-              <a
-                href="business.html"
-                class="hover:text-ru-gold transition-colors"
-                >Bisnis</a
-              >
-            </li>
-            <li>
-              <a href="team.html" class="hover:text-ru-gold transition-colors"
-                >Tim &amp; Kontak</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-white font-semibold mb-4 text-sm uppercase">
-            Kontak
-          </h4>
-          <address class="not-italic text-sm font-light space-y-2">
-            <p>Jl. Jamin Ginting No. 88, Medan</p>
-            <p>+62 812 3456 7890</p>
-            <p>info@rumahulos.co.id</p>
-          </address>
-        </div>
-      </div>
-      <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-gray-900 text-center text-xs tracking-wider"
-      >
-        © 2026 Rumah Ulos. Semua hak dilindungi.
-      </div>
-    </footer>
+  <script src="js/main.js"></script>
+</body>
 
-    <script src="js/main.js"></script>
-  </body>
 </html>
